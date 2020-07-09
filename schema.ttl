@@ -1,0 +1,5345 @@
+@prefix : <http://beamery.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:activities a rdfs:Class .
+
+:activities__id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_actor_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_actor_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_actor_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_companyId a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_createdAt a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_es a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_attribute a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_form_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_from_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_from_value a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_fromDate a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_metadata_portal_form_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_portal_form_value a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_portal_hash a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_portal_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_source a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_to_employerId a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_to_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_to_time a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_metadata_to_value a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_metadata_toDate a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_object_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_isPrivate a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:boolean .
+
+:activities_object_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_assignedTo_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_assignedTo_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_assignedTo_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_attachedTo_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_attachedTo_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_attachedTo_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_comment a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_completedAt a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_object_resource_connectedTo_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_connectedTo_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_connectedTo_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_creator_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_creator_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_creator_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_error_counter a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:integer .
+
+:activities_object_resource_data_error_event a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_error_jobId a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_error_message a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_error_started a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_expiresAt a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_object_resource_data_failedContacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:integer .
+
+:activities_object_resource_data_filename a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_importedContacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:integer .
+
+:activities_object_resource_data_signedUrl a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_status a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_data_totalContacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:integer .
+
+:activities_object_resource_data_updatedContacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:integer .
+
+:activities_object_resource_greenhouseId a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_isPrivate a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:boolean .
+
+:activities_object_resource_text a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_resource_time a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_object_resource_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_object_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_published a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_target_id a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_target_name a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_target_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_type a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:string .
+
+:activities_updatedAt a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range xsd:date .
+
+:activities_companyId_companies a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :companies .
+
+:activities_actor_id_companies a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :companies .
+
+:activities_actor_id_contacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :contacts .
+
+:activities_actor_id_users a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :users .
+
+:activities_target_id_vacancies a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :vacancies .
+
+:activities_target_id_companies a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :companies .
+
+:activities_target_id_campaigns a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :campaigns .
+
+:activities_target_id_lists a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :lists .
+
+:activities_target_id_vacancyStages a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :vacancyStages .
+
+:activities_target_id_contacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :contacts .
+
+:activities_target_id_users a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :users .
+
+:activities_object_id_attractEvents a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :attractEvents .
+
+:activities_object_id_lists a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :lists .
+
+:activities_object_id_portalPages a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :portalPages .
+
+:activities_object_id_portalForms a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :portalForms .
+
+:activities_object_id_contacts a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :contacts .
+
+:activities_object_id_users a rdf:Property;
+  rdfs:domain :activities;
+  rdfs:range :users .
+
+:attachments a rdfs:Class .
+
+:attachments__id a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_companiesWithAccess a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_companyId a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_contactId a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_creator a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_filePurpose a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_filename a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_id a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_integrations_greenhouse_id a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_integrations_jobvite_id a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_md5 a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_name a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_purpose a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_size a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:integer .
+
+:attachments_text a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_timestamp a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_type a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_url a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_userId a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_xml a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range xsd:string .
+
+:attachments_userId_users a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range :users .
+
+:attachments_companyId_companies a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range :companies .
+
+:attachments_creator_users a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range :users .
+
+:attachments_contactId_contacts a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range :contacts .
+
+:attachments_companiesWithAccess_companies a rdf:Property;
+  rdfs:domain :attachments;
+  rdfs:range :companies .
+
+:attractEvents a rdfs:Class .
+
+:attractEvents__id a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_companyId a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_createdAt a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:date .
+
+:attractEvents_createdBy a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_deletedAt a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:date .
+
+:attractEvents_deletedBy a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_description a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_end_date a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_end_time a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_end_timestamp a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:date .
+
+:attractEvents_es a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:date .
+
+:attractEvents_id a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_image_name a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_image_url a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_location_address a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_location_city a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_location_country a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_location_county a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_location_geoPoint_lat a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:float .
+
+:attractEvents_location_geoPoint_lon a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:float .
+
+:attractEvents_location_name a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_location_postcode a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_name a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_owner_id a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_relations_flowCheckIn_recordId a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_relations_flowReg_recordId a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_relations_page_id a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_relations_pool_id a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_start_date a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_start_time a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_start_timestamp a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:date .
+
+:attractEvents_timezone_id a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_timezone_name a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_timezone_value a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_type a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_updatedAt a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:date .
+
+:attractEvents_updatedBy a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range xsd:string .
+
+:attractEvents_companyId_companies a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range :companies .
+
+:attractEvents_createdBy_users a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range :users .
+
+:attractEvents_deletedBy_users a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range :users .
+
+:attractEvents_updatedBy_users a rdf:Property;
+  rdfs:domain :attractEvents;
+  rdfs:range :users .
+
+:campaigns a rdfs:Class .
+
+:campaigns__id a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_active a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_cancelledAt a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:date .
+
+:campaigns_companyId a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_createdAt a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:date .
+
+:campaigns_createdBy a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_deletedAt a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:date .
+
+:campaigns_deletedBy a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_es a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:date .
+
+:campaigns_events_bounce a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_click a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_clickbot a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_deferred a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_delivered a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_dropped a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_open a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_processed a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_replied a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_sent a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_spamreport a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_events_unsubscribe a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_finished a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_first a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_from a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_id a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_migrate a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_migrated a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_recipeId a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_started a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_status a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_tempOld a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:boolean .
+
+:campaigns_title a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_totalRecipients a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:integer .
+
+:campaigns_type a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:string .
+
+:campaigns_updatedAt a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range xsd:date .
+
+:campaigns_companyId_companies a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range :companies .
+
+:campaigns_createdBy_users a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range :users .
+
+:campaigns_deletedBy_users a rdf:Property;
+  rdfs:domain :campaigns;
+  rdfs:range :users .
+
+:campaigns_cancelledRecipients a rdfs:Class .
+
+:campaigns_cancelledRecipients_id a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range xsd:string .
+
+:campaigns_cancelledRecipients_cancelledRecipients_cancelledAt a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range xsd:date .
+
+:campaigns_cancelledRecipients_cancelledRecipients_cancelledBy a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range xsd:string .
+
+:campaigns_cancelledRecipients_cancelledRecipients_email a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range xsd:string .
+
+:campaigns_cancelledRecipients_cancelledRecipients_id a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range xsd:string .
+
+:campaigns_cancelledRecipients_cancelledRecipients_touchpointId a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range xsd:string .
+
+:campaigns_cancelledRecipients_id_campaigns a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range :campaigns .
+
+:campaigns_cancelledRecipients_cancelledRecipients_id_recipients a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range :recipients .
+
+:campaigns_cancelledRecipients_cancelledRecipients_touchpointId_campaigns_touchpoints
+  a rdf:Property;
+  rdfs:domain :campaigns_cancelledRecipients;
+  rdfs:range :campaigns_touchpoints .
+
+:campaigns_recipients a rdfs:Class .
+
+:campaigns_recipients_id a rdf:Property;
+  rdfs:domain :campaigns_recipients;
+  rdfs:range xsd:string .
+
+:campaigns_recipients_recipients_email a rdf:Property;
+  rdfs:domain :campaigns_recipients;
+  rdfs:range xsd:string .
+
+:campaigns_recipients_recipients_id a rdf:Property;
+  rdfs:domain :campaigns_recipients;
+  rdfs:range xsd:string .
+
+:campaigns_recipients_recipients_id_recipients a rdf:Property;
+  rdfs:domain :campaigns_recipients;
+  rdfs:range :recipients .
+
+:campaigns_recipients_id_campaigns a rdf:Property;
+  rdfs:domain :campaigns_recipients;
+  rdfs:range :campaigns .
+
+:campaigns_touchpoints a rdfs:Class .
+
+:campaigns_touchpoints_id a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_body a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_cancelledAt a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:date .
+
+:campaigns_touchpoints_touchpoints_createdAt a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:date .
+
+:campaigns_touchpoints_touchpoints_createdBy a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_delay_period a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_delay_tz a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_delay_backup a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:integer .
+
+:campaigns_touchpoints_touchpoints_first a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:boolean .
+
+:campaigns_touchpoints_touchpoints_id a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_scheduledFor a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:date .
+
+:campaigns_touchpoints_touchpoints_sentAt a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:date .
+
+:campaigns_touchpoints_touchpoints_signature a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_subject a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:string .
+
+:campaigns_touchpoints_touchpoints_touch a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range xsd:integer .
+
+:campaigns_touchpoints_touchpoints_createdBy_users a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range :users .
+
+:campaigns_touchpoints_id_campaigns a rdf:Property;
+  rdfs:domain :campaigns_touchpoints;
+  rdfs:range :campaigns .
+
+:companies a rdfs:Class .
+
+:companies__id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_active a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:boolean .
+
+:companies_created_at a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:date .
+
+:companies_date a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:date .
+
+:companies_deleted_at a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:date .
+
+:companies_flags_widgetUsed a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:boolean .
+
+:companies_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_organisationId a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_inherit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_activities_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_amazon_features_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_analytics_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_analytics_dashboard_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_app_homepage_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_autocomplete_multiple_fields_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_banned_links_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_beamery_5_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_beta_custom_footer_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_beta_reporting_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_beta_version_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_boolean_search_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_boolean_search_custom_fields_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_campaigns_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_campaigns_filters_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_campaigns_touchpoint_analytics_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_closest_connections_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_company_fields_lock_custom_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_company_fields_lock_view_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_confidentiality_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_confidentiality_sharing_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_contacts_fields_mandatory_global_tags_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_contacts_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_contacts_per_bulk_action_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_contacts_per_csv_export_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_contacts_per_message_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_csv_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_csv_export_fields_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_custom_fonts_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_demo_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_digests_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_disable_contact_photo_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_downtime_banner_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_edit_location_bulk_action_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_enrichment_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_events_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_events_checkin_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_export_contacts_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_extension_auto_pilot_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_filter_historical_vacancy_stages_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_filters_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_flows_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_forms_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_gdpr_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_gdpr_automation_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_general_integrations_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_global_tags_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrated_vacancy_stages_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_api_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_attachments_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_brassring_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_greenhouse_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_jazz_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_jobvite_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_nylas_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_smartRecruiters_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_workday_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_integrations_workday_V2_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_jobLevels_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_messages_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_notifications_mentions_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_pages_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_pages_block_customization_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_pools_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_pools2_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_pools_tab_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_portal_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_portal_vacancies_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_private_fields_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_quick_search_custom_fields_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_re_sync_location_api_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_recipe_actions_cf_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_recipes_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_recipes2_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_related_profiles_tab_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_remove_contacts_vacancies_payload_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_repeat_recipes_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_reply_tracking_address_only_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_reporting_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_reporting_keen_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_reporting_vacancy_pipeline_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_sourcing_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_sso_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_super_admins_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_surveys_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_team_leaderboard_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_teams_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_templates_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_timeinterval_trigger_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_users_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_users_cap_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:integer .
+
+:companies_plan_override_vacancies_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_vacancies_tab_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_plan_override_widget_limit a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_admin_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_admin_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_admin_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_business_analyst_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_business_analyst_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_business_analyst_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_business_analyst_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_campaign_access_standard_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_campaign_access_standard_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_campaign_access_standard_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_campaign_access_standard_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_confidential_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_confidential_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_confidential_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_confidential_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_integrations_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_integrations_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_integrations_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_integrations_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_non_us_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_non_us_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_non_us_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_limited_non_us_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_admin_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_admin_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_admin_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_admin_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_limited_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_limited_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_limited_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_limited_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_team_member_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_team_member_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_team_member_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_marketing_team_member_str a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_non_us_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_non_us_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_non_us_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_restricted_non_us_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_standard_non_us_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_standard_non_us_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_standard_non_us_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_standard_non_us_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_super_admin_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_super_admin_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_super_admin_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_super_admin_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_team_member_color a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_team_member_description a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_team_member_id a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_roles_team_member_name a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_templateName a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_trialEndDate a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:date .
+
+:companies_uniqueId a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:string .
+
+:companies_userDefaults_shareMsgWithAll a rdf:Property;
+  rdfs:domain :companies;
+  rdfs:range xsd:boolean .
+
+:companies_ssoSettings a rdfs:Class .
+
+:companies_ssoSettings_id a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_adfs a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:boolean .
+
+:companies_ssoSettings_ssoSettings_certificate a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_generate a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_loginPath a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_loginUrl a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_logoutUrl a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_nameIdFormat a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_ssoSettings_x509CertPath a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range xsd:string .
+
+:companies_ssoSettings_id_companies a rdf:Property;
+  rdfs:domain :companies_ssoSettings;
+  rdfs:range :companies .
+
+:companyFields a rdfs:Class .
+
+:companyFields__id a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_allowCellFocus a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_companyId a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_custom a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_displayName a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_enableCellEdit a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_enableColumnMenu a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_enableColumnResizing a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_enableFiltering a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_enableHiding a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_enablePinning a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_filter a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_filterSettings_query a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_filterSettings_querySubProp a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_filterSettings_type a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_group a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_id a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_list a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_minWidth a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:integer .
+
+:companyFields_name a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_order a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:integer .
+
+:companyFields_pinnedLeft a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_scope a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_type a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_updatedAt a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:date .
+
+:companyFields_updatedBy a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:string .
+
+:companyFields_visible a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:boolean .
+
+:companyFields_width a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range xsd:integer .
+
+:companyFields_updatedBy_users a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range :users .
+
+:companyFields_companyId_companies a rdf:Property;
+  rdfs:domain :companyFields;
+  rdfs:range :companies .
+
+:companyFields_options a rdfs:Class .
+
+:companyFields_options__id a rdf:Property;
+  rdfs:domain :companyFields_options;
+  rdfs:range xsd:string .
+
+:companyFields_options_options_title a rdf:Property;
+  rdfs:domain :companyFields_options;
+  rdfs:range xsd:string .
+
+:companyFields_visibleTo a rdfs:Class .
+
+:companyFields_visibleTo__id a rdf:Property;
+  rdfs:domain :companyFields_visibleTo;
+  rdfs:range xsd:string .
+
+:companyFields_visibleTo_values_of_visibleTo a rdf:Property;
+  rdfs:domain :companyFields_visibleTo;
+  rdfs:range xsd:string .
+
+:companyPlans a rdfs:Class .
+
+:companyPlans_company_id a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_company_name_mongo a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_recipes a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_teams a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_activities a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_greenhouse a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_csv a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_global_tags a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_closest_connections a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_messages a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:integer .
+
+:companyPlans_widget a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_pools a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_templates a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_nylas a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_users a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:integer .
+
+:companyPlans_contacts a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:integer .
+
+:companyPlans_campaigns a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_vacancies a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_company_fields_groups a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_export_contacts a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_reporting a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_recipes2 a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_digests a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_portal_vacancies a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_gdpr a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_beamery_5 a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_app_homepage a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_boolean_search a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_reporting_vacancy_pipeline a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_reporting_keen a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_analytics a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_timeinterval_trigger a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_pools2 a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_pages a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_forms a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_api a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_beta_version a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_gdpr_automation a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_team_leaderboard a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_enrichment a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_autocomplete_multiple_fields a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_pages_block_customization a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_surveys a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_demo a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_beta_reporting a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_beta_custom_footer a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_private_fields a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_custom_fonts a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_events a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_events_checkin a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_general_integrations a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_super_admins a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_users_cap a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_sso a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_company_fields_lock_custom a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_contact_fields_mandatory_global_tags a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_contacts_per_message a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_contacts_per_bulk_action a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_contacts_per_csv_export a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_campaigns_touchpoint_analytics a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_campaigns_filters a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_repeat_recipes a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_analytics_dashboard a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_confidentiality a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_confidentiality_sharing a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_quick_search_custom_fields a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_boolean_search_custom_fields a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_filters a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_filter_historical_vacancy_stages a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_edit_location_bulk_action a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_flows a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_sourcing a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_vacancies_tab a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_pools_tab a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_related_profiles_tab a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_csv_export_fields a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_notifications_mentions a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_portal a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_attachments a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_extension_auto_pilot a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_recipe_actions_cf a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_reply_tracking_address_only a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_disable_contact_photo a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_jazz a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_jobvite a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_re_sync_location_api a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_smartRecruiters a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_workday a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrated_vacancy_stages a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_brassring a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_integrations_workday_V2 a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_company_fields_lock_view a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_amazon_features a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_extension_auto_download a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_jobLevels a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_banned_links a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_downtime_banner a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_remove_contacts_vacancies_payload a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:boolean .
+
+:companyPlans_company_name_salesforce a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range xsd:string .
+
+:companyPlans_company_id_companies a rdf:Property;
+  rdfs:domain :companyPlans;
+  rdfs:range :companies .
+
+:companyPlans_chargebeePlanIds a rdfs:Class .
+
+:companyPlans_chargebeePlanIds_id a rdf:Property;
+  rdfs:domain :companyPlans_chargebeePlanIds;
+  rdfs:range xsd:string .
+
+:companyPlans_chargebeePlanIds_values_of_chargebeePlanIds a rdf:Property;
+  rdfs:domain :companyPlans_chargebeePlanIds;
+  rdfs:range xsd:string .
+
+:companyPlans_columns a rdfs:Class .
+
+:companyPlans_columns_company_id a rdf:Property;
+  rdfs:domain :companyPlans_columns;
+  rdfs:range xsd:string .
+
+:companyPlans_columns_company_name_salesforce a rdf:Property;
+  rdfs:domain :companyPlans_columns;
+  rdfs:range xsd:string .
+
+:companyPlans_columns_company_name_mongo a rdf:Property;
+  rdfs:domain :companyPlans_columns;
+  rdfs:range xsd:string .
+
+:companyPlans_columns_acl_name a rdf:Property;
+  rdfs:domain :companyPlans_columns;
+  rdfs:range xsd:string .
+
+:companyPlans_columns_company_id_companies a rdf:Property;
+  rdfs:domain :companyPlans_columns;
+  rdfs:range :companies .
+
+:contacts a rdfs:Class .
+
+:contacts__id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_age_birthday_day a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_age_birthday_month a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_age_birthday_year a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_age_range a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_age_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_anonymizedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_archivedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_assignedTo a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_companyId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_confidential a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_confidentiality_mode a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_createdAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_createdBy a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_creationSource_referral a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_creationSource_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_daysInStatus a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_deleted a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_deletedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_doNotCampaign a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_doNotContact a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_doNotEnrich a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_es a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_firstName a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_fullName a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_gdprConsent a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_gdprLastConsent a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_gender a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_externalId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_label a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_resume_timestamp a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_resume_value_pdfMd5 a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_resume_value_txtMd5 a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_resume_value_sourcerId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_resume_value_recruiterId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_amazon_resume_value_url a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_brassring_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_cornerstone_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_greenhouse_externalId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_greenhouse_url a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_greenhouse_label a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_greenhouse_lastSynced a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_integrations_greenhouse_syncInitiatedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_integrations_jazz_externalId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_jazz_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_jobvite_externalId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_jobvite_syncInitiatedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_integrations_jobvite_type a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_jobvite_url a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_workday_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_workday_Candidate_ID a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_workday_syncInitiatedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_integrations_workday_url a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_smartRecruiters_externalId a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_smartRecruiters_syncInitiatedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_integrations_smartRecruiters_url a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_taleo_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_integrations_taleo_url a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_lastActivity a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_lastContact a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_lastEmailInteraction a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_lastEnrichedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_lastHeardFrom a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_lastName a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_address a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_city a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_country a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_geometry_type a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_countryCode a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_postalCode a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_location_region a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_mergedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_mergedIn a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_current a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_primaryEducation_degree a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_deleted a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_primaryEducation_endDate a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_primaryEducation_grade a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_level a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_major a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_organisationName a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_program a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEducation_startDate a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_primaryEmail_deleted a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_primaryEmail_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEmail_source a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEmail_type a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryEmail_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryExperience_current a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_primaryExperience_deleted a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_primaryExperience_description a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryExperience_endDate a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_primaryExperience_experienceDuration a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:integer .
+
+:contacts_primaryExperience_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryExperience_location a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryExperience_organisationName a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryExperience_role a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryExperience_startDate a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_primaryPhoneNumber_deleted a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_primaryPhoneNumber_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryPhoneNumber_type a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryPhoneNumber_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryPhoto_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_primaryPhoto_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_q1 a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_source_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_source_integrations_greenhouse_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_source_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_sourcedBy a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_status_date a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_status_id a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_status_sort a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_status_value a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_summary a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_totalExperience a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:integer .
+
+:contacts_type a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:string .
+
+:contacts_unsubscribedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_updatedAt a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_users_types_unreadMessages a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:integer .
+
+:contacts_users_types_unreadMessagesSince a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:date .
+
+:contacts_verified a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range xsd:boolean .
+
+:contacts_assignedTo_users a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range :users .
+
+:contacts_status_id_companyFields a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range :companyFields .
+
+:contacts_source_id_companyFields a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range :companyFields .
+
+:contacts_createdBy_users a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range :users .
+
+:contacts_sourcedBy_users a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range :users .
+
+:contacts_companyId_companies a rdf:Property;
+  rdfs:domain :contacts;
+  rdfs:range :companies .
+
+:contactsRelationshipTypes a rdfs:Class .
+
+:contactsRelationshipTypes__id a rdf:Property;
+  rdfs:domain :contactsRelationshipTypes;
+  rdfs:range xsd:string .
+
+:contactsRelationshipTypes_antithesis a rdf:Property;
+  rdfs:domain :contactsRelationshipTypes;
+  rdfs:range xsd:string .
+
+:contactsRelationshipTypes_companyId a rdf:Property;
+  rdfs:domain :contactsRelationshipTypes;
+  rdfs:range xsd:string .
+
+:contactsRelationshipTypes_id a rdf:Property;
+  rdfs:domain :contactsRelationshipTypes;
+  rdfs:range xsd:string .
+
+:contactsRelationshipTypes_label a rdf:Property;
+  rdfs:domain :contactsRelationshipTypes;
+  rdfs:range xsd:string .
+
+:contactsRelationshipTypes_companyId_companies a rdf:Property;
+  rdfs:domain :contactsRelationshipTypes;
+  rdfs:range :companies .
+
+:contactsRelationships a rdfs:Class .
+
+:contactsRelationships__id a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_companyId a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_createdAt a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:date .
+
+:contactsRelationships_createdBy a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_hash a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_id a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_notes a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_organization_name a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_period_current a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:boolean .
+
+:contactsRelationships_period_endDate a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:date .
+
+:contactsRelationships_period_startDate a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:date .
+
+:contactsRelationships_updatedAt a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:date .
+
+:contactsRelationships_updatedBy a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range xsd:string .
+
+:contactsRelationships_updatedBy_users a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range :users .
+
+:contactsRelationships_companyId_companies a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range :companies .
+
+:contactsRelationships_createdBy_users a rdf:Property;
+  rdfs:domain :contactsRelationships;
+  rdfs:range :users .
+
+:contactsRelationships_contacts a rdfs:Class .
+
+:contactsRelationships_contacts_id a rdf:Property;
+  rdfs:domain :contactsRelationships_contacts;
+  rdfs:range xsd:string .
+
+:contactsRelationships_contacts_contacts_id a rdf:Property;
+  rdfs:domain :contactsRelationships_contacts;
+  rdfs:range xsd:string .
+
+:contactsRelationships_contacts_contacts_type a rdf:Property;
+  rdfs:domain :contactsRelationships_contacts;
+  rdfs:range xsd:string .
+
+:contactsRelationships_contacts_id_contactsRelationships a rdf:Property;
+  rdfs:domain :contactsRelationships_contacts;
+  rdfs:range :contactsRelationships .
+
+:contactsRelationships_contacts_contacts_type_contactsRelationshipTypes a rdf:Property;
+  rdfs:domain :contactsRelationships_contacts;
+  rdfs:range :contactsRelationshipTypes .
+
+:contactsRelationships_contacts_contacts_id_contacts a rdf:Property;
+  rdfs:domain :contactsRelationships_contacts;
+  rdfs:range :contacts .
+
+:contacts_attachments a rdfs:Class .
+
+:contacts_attachments_id a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_filename a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_id a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_purpose a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_text a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_type a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_value a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range xsd:string .
+
+:contacts_attachments_attachments_id_attachments a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range :attachments .
+
+:contacts_attachments_id_contacts a rdf:Property;
+  rdfs:domain :contacts_attachments;
+  rdfs:range :contacts .
+
+:contacts_education a rdfs:Class .
+
+:contacts_education_id a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_current a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:boolean .
+
+:contacts_education_education_degree a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_deleted a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:boolean .
+
+:contacts_education_education_endDate a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:date .
+
+:contacts_education_education_grade a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_id a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_level a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_major a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_organisationName a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_program a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_education_startDate a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range xsd:string .
+
+:contacts_education_id_contacts a rdf:Property;
+  rdfs:domain :contacts_education;
+  rdfs:range :contacts .
+
+:contacts_emails a rdfs:Class .
+
+:contacts_emails_id a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range xsd:string .
+
+:contacts_emails_emails_deleted a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range xsd:boolean .
+
+:contacts_emails_emails_id a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range xsd:string .
+
+:contacts_emails_emails_source a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range xsd:string .
+
+:contacts_emails_emails_type a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range xsd:string .
+
+:contacts_emails_emails_value a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range xsd:string .
+
+:contacts_emails_id_contacts a rdf:Property;
+  rdfs:domain :contacts_emails;
+  rdfs:range :contacts .
+
+:contacts_experience a rdfs:Class .
+
+:contacts_experience_id a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_experience_current a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:boolean .
+
+:contacts_experience_experience_deleted a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:boolean .
+
+:contacts_experience_experience_description a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_experience_endDate a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:date .
+
+:contacts_experience_experience_experienceDuration a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:integer .
+
+:contacts_experience_experience_id a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_experience_location a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_experience_organisationName a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_experience_role a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_experience_startDate a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range xsd:string .
+
+:contacts_experience_id_contacts a rdf:Property;
+  rdfs:domain :contacts_experience;
+  rdfs:range :contacts .
+
+:contacts_globalTags a rdfs:Class .
+
+:contacts_globalTags_id a rdf:Property;
+  rdfs:domain :contacts_globalTags;
+  rdfs:range xsd:string .
+
+:contacts_globalTags_globalTags_id a rdf:Property;
+  rdfs:domain :contacts_globalTags;
+  rdfs:range xsd:boolean .
+
+:contacts_globalTags_globalTags_value a rdf:Property;
+  rdfs:domain :contacts_globalTags;
+  rdfs:range xsd:string .
+
+:contacts_globalTags_id_contacts a rdf:Property;
+  rdfs:domain :contacts_globalTags;
+  rdfs:range :contacts .
+
+:contacts_languages a rdfs:Class .
+
+:contacts_languages_id a rdf:Property;
+  rdfs:domain :contacts_languages;
+  rdfs:range xsd:string .
+
+:contacts_languages_languages_id a rdf:Property;
+  rdfs:domain :contacts_languages;
+  rdfs:range xsd:boolean .
+
+:contacts_languages_languages_languageCode a rdf:Property;
+  rdfs:domain :contacts_languages;
+  rdfs:range xsd:string .
+
+:contacts_languages_languages_proficiency a rdf:Property;
+  rdfs:domain :contacts_languages;
+  rdfs:range xsd:string .
+
+:contacts_languages_languages_value a rdf:Property;
+  rdfs:domain :contacts_languages;
+  rdfs:range xsd:string .
+
+:contacts_languages_id_contacts a rdf:Property;
+  rdfs:domain :contacts_languages;
+  rdfs:range :contacts .
+
+:contacts_links a rdfs:Class .
+
+:contacts_links_id a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_bio a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_deleted a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:boolean .
+
+:contacts_links_links_followers a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_following a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_id a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_service a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_source a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_type a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_userId a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_username a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_links_value a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range xsd:string .
+
+:contacts_links_id_contacts a rdf:Property;
+  rdfs:domain :contacts_links;
+  rdfs:range :contacts .
+
+:contacts_lists a rdfs:Class .
+
+:contacts_lists_id a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:string .
+
+:contacts_lists_lists_date a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:date .
+
+:contacts_lists_lists_id a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:string .
+
+:contacts_lists_lists_owner a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:string .
+
+:contacts_lists_lists_step_id a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:string .
+
+:contacts_lists_lists_step_value a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:string .
+
+:contacts_lists_lists_step_addedToStepAt a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:date .
+
+:contacts_lists_lists_value a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range xsd:string .
+
+:contacts_lists_id_contacts a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range :contacts .
+
+:contacts_lists_lists_id_lists a rdf:Property;
+  rdfs:domain :contacts_lists;
+  rdfs:range :lists .
+
+:contacts_recipes a rdfs:Class .
+
+:contacts_recipes_id a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:string .
+
+:contacts_recipes_recipes_failed a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:boolean .
+
+:contacts_recipes_recipes_id a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:string .
+
+:contacts_recipes_recipes_lastTimeAssignedAt a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:date .
+
+:contacts_recipes_recipes_processedTimes a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:integer .
+
+:contacts_recipes_recipes_time a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:date .
+
+:contacts_recipes_recipes_trigger a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range xsd:string .
+
+:contacts_recipes_recipes_id_recipes a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range :recipes .
+
+:contacts_recipes_id_contacts a rdf:Property;
+  rdfs:domain :contacts_recipes;
+  rdfs:range :contacts .
+
+:contacts_skills a rdfs:Class .
+
+:contacts_skills_id a rdf:Property;
+  rdfs:domain :contacts_skills;
+  rdfs:range xsd:string .
+
+:contacts_skills_skills_deleted a rdf:Property;
+  rdfs:domain :contacts_skills;
+  rdfs:range xsd:boolean .
+
+:contacts_skills_skills_id a rdf:Property;
+  rdfs:domain :contacts_skills;
+  rdfs:range xsd:string .
+
+:contacts_skills_skills_value a rdf:Property;
+  rdfs:domain :contacts_skills;
+  rdfs:range xsd:string .
+
+:contacts_skills_id_contacts a rdf:Property;
+  rdfs:domain :contacts_skills;
+  rdfs:range :contacts .
+
+:contacts_tags a rdfs:Class .
+
+:contacts_tags_id a rdf:Property;
+  rdfs:domain :contacts_tags;
+  rdfs:range xsd:string .
+
+:contacts_tags_tags_deleted a rdf:Property;
+  rdfs:domain :contacts_tags;
+  rdfs:range xsd:boolean .
+
+:contacts_tags_tags_id a rdf:Property;
+  rdfs:domain :contacts_tags;
+  rdfs:range xsd:string .
+
+:contacts_tags_tags_value a rdf:Property;
+  rdfs:domain :contacts_tags;
+  rdfs:range xsd:string .
+
+:contacts_tags_id_contacts a rdf:Property;
+  rdfs:domain :contacts_tags;
+  rdfs:range :contacts .
+
+:contacts_vacancies a rdfs:Class .
+
+:contacts_vacancies_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_date a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:date .
+
+:contacts_vacancies_vacancies_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_amazon_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_amazon_link a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_brassring_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_cornerstone_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_greenhouse_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_greenhouse_url a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_jazz_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_jobvite_applicationId a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_jobvite_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_smartRecruiters_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_smartRecruiters_referenceId a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_workday_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_integrations_workday_url a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_owner a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_priority a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_rejectionReason_date a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:date .
+
+:contacts_vacancies_vacancies_rejectionReason_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_rejectionReason_value a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_shortPublicId a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_stage_date a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:date .
+
+:contacts_vacancies_vacancies_stage_id a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_stage_value a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_vacancies_value a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range xsd:string .
+
+:contacts_vacancies_id_contacts a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range :contacts .
+
+:contacts_vacancies_vacancies_id_vacancies a rdf:Property;
+  rdfs:domain :contacts_vacancies;
+  rdfs:range :vacancies .
+
+:events a rdfs:Class .
+
+:events__id a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_attempt a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_campaignId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_cert_err a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_companyId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_contactId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_email a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_employerFromEmail a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_event a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_fromDomain a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_ip a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_messageId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_reason a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_replyToEmail a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_response a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_send_at a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:integer .
+
+:events_sg_content_type a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_sg_event_id a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_sg_message_id a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_smtp_id a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_status a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_threadId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_time a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:date .
+
+:events_timestamp a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:integer .
+
+:events_tls a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:integer .
+
+:events_touch a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:integer .
+
+:events_touchpointId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_trackingEmail a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_url a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_url_offset_index a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:integer .
+
+:events_url_offset_type a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_userId a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range xsd:string .
+
+:events_messageId_messages a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :messages .
+
+:events_threadId_messages a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :messages .
+
+:events_contactId_contacts a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :contacts .
+
+:events_touchpointId_campaigns_touchpoints a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :campaigns_touchpoints .
+
+:events_companyId_companies a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :companies .
+
+:events_campaignId_campaigns a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :campaigns .
+
+:events_userId_users a rdf:Property;
+  rdfs:domain :events;
+  rdfs:range :users .
+
+:flows a rdfs:Class .
+
+:flows__id a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_companyId a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_createdAt a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:date .
+
+:flows_createdBy a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_deletedAt a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:date .
+
+:flows_deletedBy a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_latestVersionId a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_name a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_recordId a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_recordStatus a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_slug a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_status a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_template a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:boolean .
+
+:flows_type a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_updatedAt a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:date .
+
+:flows_updatedBy a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:string .
+
+:flows_version a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range xsd:integer .
+
+:flows_createdBy_users a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range :users .
+
+:flows_companyId_companies a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range :companies .
+
+:flows_deletedBy_users a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range :users .
+
+:flows_updatedBy_users a rdf:Property;
+  rdfs:domain :flows;
+  rdfs:range :users .
+
+:flows_pages a rdfs:Class .
+
+:flows_pages_recordId a rdf:Property;
+  rdfs:domain :flows_pages;
+  rdfs:range xsd:string .
+
+:flows_pages_values_of_pages a rdf:Property;
+  rdfs:domain :flows_pages;
+  rdfs:range xsd:string .
+
+:flows_pages_recordId_flows a rdf:Property;
+  rdfs:domain :flows_pages;
+  rdfs:range :flows .
+
+:globalTags a rdfs:Class .
+
+:globalTags__id a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range xsd:string .
+
+:globalTags_companyId a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range xsd:string .
+
+:globalTags_es a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range xsd:date .
+
+:globalTags_id a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range xsd:string .
+
+:globalTags_isActive a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range xsd:boolean .
+
+:globalTags_value a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range xsd:string .
+
+:globalTags_companyId_companies a rdf:Property;
+  rdfs:domain :globalTags;
+  rdfs:range :companies .
+
+:lists a rdfs:Class .
+
+:lists__id a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_companyId a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_createdAt a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:date .
+
+:lists_createdBy a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_description a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_es a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:date .
+
+:lists_id a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_manager a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_name a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_owner a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_pipelines a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_rules_OR a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_type_id a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_updatedAt a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:date .
+
+:lists_updatedBy a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_visibility a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range xsd:string .
+
+:lists_owner_users a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range :users .
+
+:lists_manager_users a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range :users .
+
+:lists_updatedBy_users a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range :users .
+
+:lists_companyId_companies a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range :companies .
+
+:lists_createdBy_users a rdf:Property;
+  rdfs:domain :lists;
+  rdfs:range :users .
+
+:lists_globalTags a rdfs:Class .
+
+:lists_globalTags_id a rdf:Property;
+  rdfs:domain :lists_globalTags;
+  rdfs:range xsd:string .
+
+:lists_globalTags_globalTags_id a rdf:Property;
+  rdfs:domain :lists_globalTags;
+  rdfs:range xsd:string .
+
+:lists_globalTags_globalTags_id_globalTags a rdf:Property;
+  rdfs:domain :lists_globalTags;
+  rdfs:range :globalTags .
+
+:lists_globalTags_id_lists a rdf:Property;
+  rdfs:domain :lists_globalTags;
+  rdfs:range :lists .
+
+:lists_sharedTeams a rdfs:Class .
+
+:lists_sharedTeams_id a rdf:Property;
+  rdfs:domain :lists_sharedTeams;
+  rdfs:range xsd:string .
+
+:lists_sharedTeams_sharedTeams_id a rdf:Property;
+  rdfs:domain :lists_sharedTeams;
+  rdfs:range xsd:string .
+
+:lists_sharedTeams_sharedTeams_id_userTeams a rdf:Property;
+  rdfs:domain :lists_sharedTeams;
+  rdfs:range :userTeams .
+
+:lists_sharedTeams_id_lists a rdf:Property;
+  rdfs:domain :lists_sharedTeams;
+  rdfs:range :lists .
+
+:lists_sharedUsers a rdfs:Class .
+
+:lists_sharedUsers_id a rdf:Property;
+  rdfs:domain :lists_sharedUsers;
+  rdfs:range xsd:string .
+
+:lists_sharedUsers_sharedUsers_id a rdf:Property;
+  rdfs:domain :lists_sharedUsers;
+  rdfs:range xsd:string .
+
+:lists_sharedUsers_id_lists a rdf:Property;
+  rdfs:domain :lists_sharedUsers;
+  rdfs:range :lists .
+
+:lists_sharedUsers_sharedUsers_id_users a rdf:Property;
+  rdfs:domain :lists_sharedUsers;
+  rdfs:range :users .
+
+:messages a rdfs:Class .
+
+:messages__id a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_campaignId a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_candidateId a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_companyId a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_charsets_cc a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_charsets_from a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_charsets_html a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_charsets_subject a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_charsets_text a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_charsets_to a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_direction a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_forwardToEmail a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_from a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_fromDomain a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_fromName a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_headerStr a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_md5 a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_message_snippet a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_message_sourceHtml a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_message_sourceText a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_message_subject a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_message_type a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_message_value a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_metadata_cc a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_metadata_from a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_metadata_to a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_processedAt a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:date .
+
+:messages_data_replyToEmail a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_sentAt a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_data_touch a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:integer .
+
+:messages_data_trackingEmail a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_employerId a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_id a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_sent a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:boolean .
+
+:messages_threadId a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_time a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:date .
+
+:messages_touchpointId a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_type a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range xsd:string .
+
+:messages_companyId_companies a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range :companies .
+
+:messages_campaignId_campaigns a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range :campaigns .
+
+:messages_touchpointId_campaigns_touchpoints a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range :campaigns_touchpoints .
+
+:messages_candidateId_contacts a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range :contacts .
+
+:messages_employerId_users a rdf:Property;
+  rdfs:domain :messages;
+  rdfs:range :users .
+
+:messages_data_attachments a rdfs:Class .
+
+:messages_data_attachments_id a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_container a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_contentId a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_content_disposition a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_extension a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_filename a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_name a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_data_attachments_size a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:integer .
+
+:messages_data_attachments_data_attachments_type a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range xsd:string .
+
+:messages_data_attachments_id_messages a rdf:Property;
+  rdfs:domain :messages_data_attachments;
+  rdfs:range :messages .
+
+:messages_data_recipientVariables a rdfs:Class .
+
+:messages_data_recipientVariables_id a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range xsd:string .
+
+:messages_data_recipientVariables_data_recipientVariables_fallback a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range xsd:string .
+
+:messages_data_recipientVariables_data_recipientVariables_template a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range xsd:string .
+
+:messages_data_recipientVariables_data_recipientVariables_text a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range xsd:string .
+
+:messages_data_recipientVariables_data_recipientVariables_value a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range xsd:string .
+
+:messages_data_recipientVariables_data_recipientVariables_variable a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range xsd:string .
+
+:messages_data_recipientVariables_id_messages a rdf:Property;
+  rdfs:domain :messages_data_recipientVariables;
+  rdfs:range :messages .
+
+:messages_data_to a rdfs:Class .
+
+:messages_data_to_id a rdf:Property;
+  rdfs:domain :messages_data_to;
+  rdfs:range xsd:string .
+
+:messages_data_to_data_to_email a rdf:Property;
+  rdfs:domain :messages_data_to;
+  rdfs:range xsd:string .
+
+:messages_data_to_id_messages a rdf:Property;
+  rdfs:domain :messages_data_to;
+  rdfs:range :messages .
+
+:pipelines a rdfs:Class .
+
+:pipelines__id a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_companyId a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_createdBy a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_description a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_id a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_name a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_updatedAt a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:date .
+
+:pipelines_updatedBy a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range xsd:string .
+
+:pipelines_companyId_companies a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range :companies .
+
+:pipelines_createdBy_users a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range :users .
+
+:pipelines_updatedBy_users a rdf:Property;
+  rdfs:domain :pipelines;
+  rdfs:range :users .
+
+:portalForms a rdfs:Class .
+
+:portalForms__id a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_companyId a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_confirmation_cta a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_confirmation_footnote a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_confirmation_info a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_confirmation_title a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_createdAt a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:date .
+
+:portalForms_createdBy a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_deletedAt a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:date .
+
+:portalForms_hidePublished a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:boolean .
+
+:portalForms_id a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_name a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_publishedAt a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:date .
+
+:portalForms_slug a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:string .
+
+:portalForms_updatedAt a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range xsd:date .
+
+:portalForms_companyId_companies a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range :companies .
+
+:portalForms_createdBy_users a rdf:Property;
+  rdfs:domain :portalForms;
+  rdfs:range :users .
+
+:portalPages a rdfs:Class .
+
+:portalPages__id a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_companyId a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_createdAt a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:date .
+
+:portalPages_createdBy a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_deletedAt a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:date .
+
+:portalPages_hidePublished a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:boolean .
+
+:portalPages_id a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_name a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_publishedAt a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:date .
+
+:portalPages_seo_title a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_seo_description a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_slug a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_type a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:string .
+
+:portalPages_updatedAt a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range xsd:date .
+
+:portalPages_createdBy_users a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range :users .
+
+:portalPages_companyId_companies a rdf:Property;
+  rdfs:domain :portalPages;
+  rdfs:range :companies .
+
+:recipes a rdfs:Class .
+
+:recipes__id a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:string .
+
+:recipes_active a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:boolean .
+
+:recipes_companyId a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:string .
+
+:recipes_createdAt a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:date .
+
+:recipes_createdBy a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:string .
+
+:recipes_id a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:string .
+
+:recipes_repeat_active a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:boolean .
+
+:recipes_title a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:string .
+
+:recipes_updatedAt a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:date .
+
+:recipes_updatedBy a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range xsd:string .
+
+:recipes_updatedBy_users a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range :users .
+
+:recipes_companyId_companies a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range :companies .
+
+:recipes_createdBy_users a rdf:Property;
+  rdfs:domain :recipes;
+  rdfs:range :users .
+
+:recipes_actions a rdfs:Class .
+
+:recipes_actions_id a rdf:Property;
+  rdfs:domain :recipes_actions;
+  rdfs:range xsd:string .
+
+:recipes_actions_actions_type a rdf:Property;
+  rdfs:domain :recipes_actions;
+  rdfs:range xsd:string .
+
+:recipes_actions_actions_params a rdf:Property;
+  rdfs:domain :recipes_actions;
+  rdfs:range xsd:string .
+
+:recipes_actions_id_recipes a rdf:Property;
+  rdfs:domain :recipes_actions;
+  rdfs:range :recipes .
+
+:recipes_globalTags a rdfs:Class .
+
+:recipes_globalTags_id a rdf:Property;
+  rdfs:domain :recipes_globalTags;
+  rdfs:range xsd:string .
+
+:recipes_globalTags_globalTags_id a rdf:Property;
+  rdfs:domain :recipes_globalTags;
+  rdfs:range xsd:string .
+
+:recipes_globalTags_globalTags_id_globalTags a rdf:Property;
+  rdfs:domain :recipes_globalTags;
+  rdfs:range :globalTags .
+
+:recipes_globalTags_id_recipes a rdf:Property;
+  rdfs:domain :recipes_globalTags;
+  rdfs:range :recipes .
+
+:recipes_triggers a rdfs:Class .
+
+:recipes_triggers_id a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_metadata_next a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:date .
+
+:recipes_triggers_triggers_params_action a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_added a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_answerId a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_attribute a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_interval_id a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_interval_key a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_interval_value a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:integer .
+
+:recipes_triggers_triggers_params_portalFormId a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_questionId a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_source a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_params_to a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_triggers_type a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range xsd:string .
+
+:recipes_triggers_id_recipes a rdf:Property;
+  rdfs:domain :recipes_triggers;
+  rdfs:range :recipes .
+
+:recipients a rdfs:Class .
+
+:recipients__id a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_campaignId a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_companyId a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_contactId a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_createdAt a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:date .
+
+:recipients_email a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_es a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:date .
+
+:recipients_groupId a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_id a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range xsd:string .
+
+:recipients_contactId_contacts a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range :contacts .
+
+:recipients_campaignId_campaigns a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range :campaigns .
+
+:recipients_companyId_companies a rdf:Property;
+  rdfs:domain :recipients;
+  rdfs:range :companies .
+
+:recipients_touchpoints a rdfs:Class .
+
+:recipients_touchpoints_id a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:string .
+
+:recipients_touchpoints_touchpoints_cancelledAt a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:date .
+
+:recipients_touchpoints_touchpoints_cancelledBy a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:string .
+
+:recipients_touchpoints_touchpoints_checkedAt a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:date .
+
+:recipients_touchpoints_touchpoints_id a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:string .
+
+:recipients_touchpoints_touchpoints_scheduledFor a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:date .
+
+:recipients_touchpoints_touchpoints_sentAt a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range xsd:date .
+
+:recipients_touchpoints_touchpoints_id_campaigns_touchpoints a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range :campaigns_touchpoints .
+
+:recipients_touchpoints_id_recipients a rdf:Property;
+  rdfs:domain :recipients_touchpoints;
+  rdfs:range :recipients .
+
+:teams a rdfs:Class .
+
+:teams__id a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:string .
+
+:teams_companyId a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:string .
+
+:teams_description a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:string .
+
+:teams_id a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:string .
+
+:teams_integrations_greenhouse_id a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:string .
+
+:teams_name a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:string .
+
+:teams_type a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range xsd:date .
+
+:teams_companyId_companies a rdf:Property;
+  rdfs:domain :teams;
+  rdfs:range :companies .
+
+:userTeams a rdfs:Class .
+
+:userTeams__id a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:string .
+
+:userTeams_companyId a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:string .
+
+:userTeams_createdAt a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:date .
+
+:userTeams_deletedAt a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:date .
+
+:userTeams_id a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:string .
+
+:userTeams_name a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:string .
+
+:userTeams_updatedAt a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range xsd:date .
+
+:userTeams_companyId_companies a rdf:Property;
+  rdfs:domain :userTeams;
+  rdfs:range :companies .
+
+:userTeams_memberIds a rdfs:Class .
+
+:userTeams_memberIds_id a rdf:Property;
+  rdfs:domain :userTeams_memberIds;
+  rdfs:range xsd:string .
+
+:userTeams_memberIds_values_of_memberIds a rdf:Property;
+  rdfs:domain :userTeams_memberIds;
+  rdfs:range xsd:string .
+
+:userTeams_memberIds_id_userTeams a rdf:Property;
+  rdfs:domain :userTeams_memberIds;
+  rdfs:range :userTeams .
+
+:users a rdfs:Class .
+
+:users__id a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_allowSSO a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_companyId a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_createdAt a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_credentials_email a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_credentials_failedLogins a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:integer .
+
+:users_credentials_password a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_credentials_salt a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_credentials_ssoUserIdentifier a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_credentials_verified a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_deletedAt a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_email a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_emailFromName a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_emailSignature a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_es a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_firstName a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_hasLoggedIn a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_id a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_integrations_brassring_id a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_integrations_cornerstone_id a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_integrations_greenhouse_adminRole a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_integrations_greenhouse_userEmail a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_integrations_greenhouse_userId a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_integrations_workday_Employee_ID a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_isNewbie a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_lastName a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_mustResetPasswordAt a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_notificationFeeds_mentions_lastRead a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_notifications a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_phone a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_position a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_replyEmail a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_replyNotifications a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_secondaryPhone a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_settings_mail_replyTo a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_shareMsgWithAll a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:boolean .
+
+:users_ssoUserIdentifier a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_timezone a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_token a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_updated_contextio a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_updatedAt a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:date .
+
+:users_updatedBy a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_user_id a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range xsd:string .
+
+:users_companyId_companies a rdf:Property;
+  rdfs:domain :users;
+  rdfs:range :companies .
+
+:users_with_roles a rdfs:Class .
+
+:users_with_roles_user_id a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_first_name a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_last_name a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_email a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_user_deleted_at a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:date .
+
+:users_with_roles_user_created_at a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:date .
+
+:users_with_roles_company_id a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_company_name a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_role_id a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_role_display_name a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_role_key_name a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range xsd:string .
+
+:users_with_roles_user_id_users a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range :users .
+
+:users_with_roles_company_id_companies a rdf:Property;
+  rdfs:domain :users_with_roles;
+  rdfs:range :companies .
+
+:users_with_teams a rdfs:Class .
+
+:users_with_teams_user_id a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_first_name a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_last_name a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_email a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_user_deleted_at a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:date .
+
+:users_with_teams_user_created_at a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:date .
+
+:users_with_teams_company_id a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_company_name a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_team_name a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_team_id a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:string .
+
+:users_with_teams_team_deleted_at a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range xsd:date .
+
+:users_with_teams_team_id_userTeams a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range :userTeams .
+
+:users_with_teams_company_id_companies a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range :companies .
+
+:users_with_teams_user_id_users a rdf:Property;
+  rdfs:domain :users_with_teams;
+  rdfs:range :users .
+
+:vacancies a rdfs:Class .
+
+:vacancies__id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_cancelledAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_closedAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_companyId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_contactCount a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:integer .
+
+:vacancies_createAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_createdAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_createdBy a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_created_at a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_department a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_description a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_draftAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_dueDate a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_es a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_externalManager_email a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalManager_firstName a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalManager_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalManager_internalHashId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalManager_lastName a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalOwner_email a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalOwner_firstName a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalOwner_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalOwner_internalHashId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalOwner_lastName a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalSourcer_email a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalSourcer_firstName a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalSourcer_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalSourcer_internalHashId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_externalSourcer_lastName a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_formId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_hashId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_holdAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_amazon_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_amazon_link a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_brassring_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_cornerstone_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_greenhouse_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_greenhouse_url a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_jazz_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_jobvite_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_smartRecruiters_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_smartRecruiters_referenceId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_integrations_workday_id a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_jobLevelId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_jobUrl a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_location a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_manager a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_migration a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:boolean .
+
+:vacancies_openAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_owner a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_priority a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_published a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:boolean .
+
+:vacancies_salary a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_seniority a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_shortPublicId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_sourcer a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_status a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_teamId a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_title a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_type a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_updatedAt a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:date .
+
+:vacancies_updatedBy a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_visibility a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range xsd:string .
+
+:vacancies_owner_users a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :users .
+
+:vacancies_teamId_teams a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :teams .
+
+:vacancies_companyId_companies a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :companies .
+
+:vacancies_createdBy_users a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :users .
+
+:vacancies_formId_portalForms a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :portalForms .
+
+:vacancies_jobLevelId_vacancyJobLevels a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :vacancyJobLevels .
+
+:vacancies_manager_users a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :users .
+
+:vacancies_updatedBy_users a rdf:Property;
+  rdfs:domain :vacancies;
+  rdfs:range :users .
+
+:vacancies_globalTags a rdfs:Class .
+
+:vacancies_globalTags_id a rdf:Property;
+  rdfs:domain :vacancies_globalTags;
+  rdfs:range xsd:string .
+
+:vacancies_globalTags_globalTags_id a rdf:Property;
+  rdfs:domain :vacancies_globalTags;
+  rdfs:range xsd:string .
+
+:vacancies_globalTags_id_vacancies a rdf:Property;
+  rdfs:domain :vacancies_globalTags;
+  rdfs:range :vacancies .
+
+:vacancies_globalTags_globalTags_id_globalTags a rdf:Property;
+  rdfs:domain :vacancies_globalTags;
+  rdfs:range :globalTags .
+
+:vacancies_sharedTeams a rdfs:Class .
+
+:vacancies_sharedTeams_id a rdf:Property;
+  rdfs:domain :vacancies_sharedTeams;
+  rdfs:range xsd:string .
+
+:vacancies_sharedTeams_sharedTeams_id a rdf:Property;
+  rdfs:domain :vacancies_sharedTeams;
+  rdfs:range xsd:string .
+
+:vacancies_sharedTeams_id_vacancies a rdf:Property;
+  rdfs:domain :vacancies_sharedTeams;
+  rdfs:range :vacancies .
+
+:vacancies_sharedTeams_sharedTeams_id_teams a rdf:Property;
+  rdfs:domain :vacancies_sharedTeams;
+  rdfs:range :teams .
+
+:vacancies_sharedUsers a rdfs:Class .
+
+:vacancies_sharedUsers_id a rdf:Property;
+  rdfs:domain :vacancies_sharedUsers;
+  rdfs:range xsd:string .
+
+:vacancies_sharedUsers_sharedUsers_id a rdf:Property;
+  rdfs:domain :vacancies_sharedUsers;
+  rdfs:range xsd:string .
+
+:vacancies_sharedUsers_sharedUsers_id_users a rdf:Property;
+  rdfs:domain :vacancies_sharedUsers;
+  rdfs:range :users .
+
+:vacancies_stages a rdfs:Class .
+
+:vacancies_stages_id a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_stages_assigned a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:integer .
+
+:vacancies_stages_stages_contactCount a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:integer .
+
+:vacancies_stages_stages_group a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_stages_id a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_stages_integrations_greenhouse_id a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_stages_integrations_jobvite_id a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_stages_locked a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:boolean .
+
+:vacancies_stages_stages_name a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_stages_order a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:integer .
+
+:vacancies_stages_stages_value a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range xsd:string .
+
+:vacancies_stages_id_vacancies a rdf:Property;
+  rdfs:domain :vacancies_stages;
+  rdfs:range :vacancies .
+
+:vacancies_stagesCount a rdfs:Class .
+
+:vacancies_stagesCount_id a rdf:Property;
+  rdfs:domain :vacancies_stagesCount;
+  rdfs:range xsd:string .
+
+:vacancies_stagesCount_stagesCount_count a rdf:Property;
+  rdfs:domain :vacancies_stagesCount;
+  rdfs:range xsd:integer .
+
+:vacancies_stagesCount_stagesCount_id a rdf:Property;
+  rdfs:domain :vacancies_stagesCount;
+  rdfs:range xsd:string .
+
+:vacancies_stagesCount_id_vacancies a rdf:Property;
+  rdfs:domain :vacancies_stagesCount;
+  rdfs:range :vacancies .
+
+:vacancies_targetCompanies a rdfs:Class .
+
+:vacancies_targetCompanies_id a rdf:Property;
+  rdfs:domain :vacancies_targetCompanies;
+  rdfs:range xsd:string .
+
+:vacancies_targetCompanies_targetCompanies_domain a rdf:Property;
+  rdfs:domain :vacancies_targetCompanies;
+  rdfs:range xsd:string .
+
+:vacancies_targetCompanies_targetCompanies_logo a rdf:Property;
+  rdfs:domain :vacancies_targetCompanies;
+  rdfs:range xsd:string .
+
+:vacancies_targetCompanies_targetCompanies_name a rdf:Property;
+  rdfs:domain :vacancies_targetCompanies;
+  rdfs:range xsd:string .
+
+:vacancies_targetCompanies_id_vacancies a rdf:Property;
+  rdfs:domain :vacancies_targetCompanies;
+  rdfs:range :vacancies .
+
+:vacancyJobLevels a rdfs:Class .
+
+:vacancyJobLevels__id a rdf:Property;
+  rdfs:domain :vacancyJobLevels;
+  rdfs:range xsd:string .
+
+:vacancyJobLevels_companyId a rdf:Property;
+  rdfs:domain :vacancyJobLevels;
+  rdfs:range xsd:string .
+
+:vacancyJobLevels_id a rdf:Property;
+  rdfs:domain :vacancyJobLevels;
+  rdfs:range xsd:string .
+
+:vacancyJobLevels_name a rdf:Property;
+  rdfs:domain :vacancyJobLevels;
+  rdfs:range xsd:string .
+
+:vacancyJobLevels_order a rdf:Property;
+  rdfs:domain :vacancyJobLevels;
+  rdfs:range xsd:integer .
+
+:vacancyJobLevels_companyId_companies a rdf:Property;
+  rdfs:domain :vacancyJobLevels;
+  rdfs:range :companies .
+
+:vacancyStages a rdfs:Class .
+
+:vacancyStages__id a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range xsd:string .
+
+:vacancyStages_companyId a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range xsd:string .
+
+:vacancyStages_createdAt a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range xsd:date .
+
+:vacancyStages_id a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range xsd:string .
+
+:vacancyStages_updatedAt a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range xsd:date .
+
+:vacancyStages_updatedBy a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range xsd:string .
+
+:vacancyStages_companyId_companies a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range :companies .
+
+:vacancyStages_updatedBy_users a rdf:Property;
+  rdfs:domain :vacancyStages;
+  rdfs:range :users .
+
+:vacancyStages_default a rdfs:Class .
+
+:vacancyStages_default_id a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:string .
+
+:vacancyStages_default_default_group a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:string .
+
+:vacancyStages_default_default_id a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:string .
+
+:vacancyStages_default_default_locked a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:boolean .
+
+:vacancyStages_default_default_name a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:string .
+
+:vacancyStages_default_default_order a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:integer .
+
+:vacancyStages_default_default_value a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range xsd:string .
+
+:vacancyStages_default_id_vacancyStages a rdf:Property;
+  rdfs:domain :vacancyStages_default;
+  rdfs:range :vacancyStages .
