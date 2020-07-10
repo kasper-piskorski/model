@@ -1,0 +1,27 @@
+FOAF
+http://xmlns.com/foaf/spec/
+http://xmlns.com/foaf/0.1/
+
+SKOS
+https://www.w3.org/TR/2008/WD-skos-reference-20080829/skos.html
+http://www.w3.org/2008/05/skos#
+
+vCard - for describing People and Organisations
+https://www.w3.org/TR/vcard-rdf/
+http://www.w3.org/2006/vcard/ns#
+
+Organisation Ontology
+https://www.w3.org/TR/vocab-org/
+http://www.w3.org/ns/org#
+
+SARO - Skill and Recruitment Ontology
+https://elisasibarani.github.io/SARO/
+http://w3id.org/saro#
+
+SIOC - ontology for terms to describe online communities
+http://sioc-project.org/
+http://rdfs.org/sioc/ns#
+
+The ESCO ontology - ontology for European Skills, Competences, qualifications and Occupations
+http://data.europa.eu/esco/model
+http://data.europa.eu/esco/model#
