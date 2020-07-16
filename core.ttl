@@ -1,0 +1,332 @@
+@prefix : <http://www.beamery.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skill: <http://mccarthy.dia.fi.upm.es/Skill_Ontology#> .
+@base <http://www.beamery.com> .
+
+<http://www.beamery.com> rdf:type owl:Ontology .
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#duration
+xsd:duration rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.beamery.com#hasCapability
+:hasCapability rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :contact ;
+               rdfs:range :capability .
+
+
+###  http://www.beamery.com#hasCapabilityAttribute
+:hasCapabilityAttribute rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :capability ;
+                        rdfs:range :capabilityAttribute .
+
+
+###  http://www.beamery.com#hasEducation
+:hasEducation rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty ;
+              rdfs:domain :contact ;
+              rdfs:range :education .
+
+
+###  http://www.beamery.com#hasEducationAttribute
+:hasEducationAttribute rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf owl:topObjectProperty ;
+                       rdfs:domain :education ;
+                       rdfs:range :educationAttribute .
+
+
+###  http://www.beamery.com#hasEducationDegree
+:hasEducationDegree rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasEducationAttribute ;
+                    rdf:type owl:FunctionalProperty ;
+                    rdfs:domain :education ;
+                    rdfs:range :degree .
+
+
+###  http://www.beamery.com#hasEducationDegreeClass
+:hasEducationDegreeClass rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :hasEducationAttribute ;
+                         rdf:type owl:FunctionalProperty ;
+                         rdfs:domain :education ;
+                         rdfs:range :degreeClass .
+
+
+###  http://www.beamery.com#hasEducationMajor
+:hasEducationMajor rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasEducationAttribute ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :education ;
+                   rdfs:range :major .
+
+
+###  http://www.beamery.com#hasEducationOrganisation
+:hasEducationOrganisation rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :hasEducationAttribute ;
+                          rdf:type owl:FunctionalProperty ;
+                          rdfs:domain :education ;
+                          rdfs:range :organisation .
+
+
+###  http://www.beamery.com#hasEducationSkill
+:hasEducationSkill rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasEducationAttribute ;
+                   rdfs:domain :education ;
+                   rdfs:range :skill .
+
+
+###  http://www.beamery.com#hasExperience
+:hasExperience rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasExperienceAttribute ;
+               rdfs:domain :contact ;
+               rdfs:range :experience .
+
+
+###  http://www.beamery.com#hasExperienceAttribute
+:hasExperienceAttribute rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf owl:topObjectProperty ;
+                        rdfs:domain :experience ;
+                        rdfs:range :experienceAttribute .
+
+
+###  http://www.beamery.com#hasExperienceOrganisation
+:hasExperienceOrganisation rdf:type owl:ObjectProperty ;
+                           rdfs:subPropertyOf :hasExperienceAttribute ;
+                           rdf:type owl:FunctionalProperty ;
+                           rdfs:domain :experience ;
+                           rdfs:range :organisation .
+
+
+###  http://www.beamery.com#hasExperienceRole
+:hasExperienceRole rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf :hasExperienceAttribute ;
+                   rdf:type owl:FunctionalProperty ;
+                   rdfs:domain :experience ;
+                   rdfs:range :experienceRole .
+
+
+###  http://www.beamery.com#hasExperienceSkill
+:hasExperienceSkill rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasExperienceAttribute ;
+                    rdfs:domain :experience ;
+                    rdfs:range :experienceSkill .
+
+
+###  http://www.beamery.com#hasLanguage
+:hasLanguage rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:domain :contact ;
+             rdfs:range :language .
+
+
+###  http://www.beamery.com#hasSkill
+:hasSkill rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf :hasCapabilityAttribute ;
+          rdfs:domain :capability ;
+          rdfs:range :skill .
+
+
+###  http://www.beamery.com#hasSkillProficiency
+:hasSkillProficiency rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf :hasCapabilityAttribute ;
+                     rdfs:domain :capability ;
+                     rdfs:range :skillProficiency .
+
+
+###  http://www.beamery.com#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdf:type owl:TransitiveProperty ;
+           rdfs:domain :spatialEntity ;
+           rdfs:range :location .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.beamery.com#duration
+:duration rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :temporalEntity ;
+          rdfs:range xsd:duration .
+
+
+###  http://www.beamery.com#endDate
+:endDate rdf:type owl:DatatypeProperty ;
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdf:type owl:FunctionalProperty ;
+         rdfs:domain :temporalEntity ;
+         rdfs:range xsd:date .
+
+
+###  http://www.beamery.com#firstName
+:firstName rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :contact ;
+           rdfs:range xsd:string .
+
+
+###  http://www.beamery.com#lastName
+:lastName rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :contact ;
+          rdfs:range xsd:string .
+
+
+###  http://www.beamery.com#startDate
+:startDate rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :temporalEntity ;
+           rdfs:range xsd:date .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.beamery.com#capability
+:capability rdf:type owl:Class .
+
+
+###  http://www.beamery.com#capabilityAttribute
+:capabilityAttribute rdf:type owl:Class .
+
+
+###  http://www.beamery.com#city
+:city rdf:type owl:Class ;
+      rdfs:subClassOf :location .
+
+
+###  http://www.beamery.com#contact
+:contact rdf:type owl:Class ;
+         rdfs:subClassOf :spatialEntity ;
+         rdfs:comment "Link to persons subontology" .
+
+
+###  http://www.beamery.com#country
+:country rdf:type owl:Class ;
+         rdfs:subClassOf :location .
+
+
+###  http://www.beamery.com#degree
+:degree rdf:type owl:Class ;
+        rdfs:subClassOf :educationAttribute .
+
+
+###  http://www.beamery.com#degreeClass
+:degreeClass rdf:type owl:Class ;
+             rdfs:subClassOf :educationAttribute .
+
+
+###  http://www.beamery.com#education
+:education rdf:type owl:Class ;
+           rdfs:subClassOf :spatialEntity ,
+                           :temporalEntity ;
+           rdfs:comment "Link to education subontology" .
+
+
+###  http://www.beamery.com#educationAttribute
+:educationAttribute rdf:type owl:Class ;
+                    rdfs:comment "Explicit subclasses are created for now and linked to equivalent classes. Remove later." .
+
+
+###  http://www.beamery.com#educationOrganisation
+:educationOrganisation rdf:type owl:Class ;
+                       owl:equivalentClass :organisation ;
+                       rdfs:subClassOf :educationAttribute .
+
+
+###  http://www.beamery.com#experience
+:experience rdf:type owl:Class ;
+            rdfs:subClassOf :spatialEntity ,
+                            :temporalEntity .
+
+
+###  http://www.beamery.com#experienceAttribute
+:experienceAttribute rdf:type owl:Class ;
+                     rdfs:comment "Explicit subclasses are created for now and linked to equivalent classes. Remove later." .
+
+
+###  http://www.beamery.com#experienceOrganisation
+:experienceOrganisation rdf:type owl:Class ;
+                        owl:equivalentClass :organisation ;
+                        rdfs:subClassOf :experienceAttribute .
+
+
+###  http://www.beamery.com#experienceRole
+:experienceRole rdf:type owl:Class ;
+                owl:equivalentClass :roleTitle ;
+                rdfs:subClassOf :experienceAttribute .
+
+
+###  http://www.beamery.com#experienceSkill
+:experienceSkill rdf:type owl:Class ;
+                 owl:equivalentClass :skill ;
+                 rdfs:subClassOf :experienceAttribute .
+
+
+###  http://www.beamery.com#language
+:language rdf:type owl:Class .
+
+
+###  http://www.beamery.com#location
+:location rdf:type owl:Class ;
+          rdfs:subClassOf :spatialEntity ;
+          rdfs:comment "Link to existing location ontology" .
+
+
+###  http://www.beamery.com#major
+:major rdf:type owl:Class ;
+       rdfs:subClassOf :educationAttribute .
+
+
+###  http://www.beamery.com#organisation
+:organisation rdf:type owl:Class ;
+              rdfs:subClassOf :spatialEntity ;
+              rdfs:comment "Link to organisation subontology." .
+
+
+###  http://www.beamery.com#roleTitle
+:roleTitle rdf:type owl:Class .
+
+
+###  http://www.beamery.com#skill
+:skill rdf:type owl:Class ;
+       rdfs:subClassOf :capabilityAttribute ;
+       rdfs:comment "Link to a skills subontology" .
+
+
+###  http://www.beamery.com#skillProficiency
+:skillProficiency rdf:type owl:Class ;
+                  rdfs:subClassOf :capabilityAttribute .
+
+
+###  http://www.beamery.com#spatialEntity
+:spatialEntity rdf:type owl:Class .
+
+
+###  http://www.beamery.com#temporalEntity
+:temporalEntity rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
