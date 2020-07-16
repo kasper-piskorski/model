@@ -15,6 +15,7 @@
                           owl:imports <http://www.w3.org/ns/org#> ,
                                       <https://raw.githubusercontent.com/kasper-piskorski/model/master/hrm/EducationOntology.ttl> ,
                                       <https://raw.githubusercontent.com/kasper-piskorski/model/master/hrm/GeographyOntology.ttl> ,
+                                      <https://raw.githubusercontent.com/kasper-piskorski/model/master/hrm/LanguageOntology.ttl> ,
                                       <https://raw.githubusercontent.com/kasper-piskorski/model/master/hrm/SkillOntology.ttl> .
 
 #################################################################
