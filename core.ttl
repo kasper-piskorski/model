@@ -25,6 +25,13 @@ xsd:duration rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
+###  http://www.beamery.com#demonstratedThrough
+:demonstratedThrough rdf:type owl:ObjectProperty ;
+                     rdfs:subPropertyOf owl:topObjectProperty ;
+                     rdfs:domain :softSkill ;
+                     rdfs:range :behaviour .
+
+
 ###  http://www.beamery.com#hasCapability
 :hasCapability rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf owl:topObjectProperty ;
@@ -248,6 +255,10 @@ xsd:duration rdf:type rdfs:Datatype .
          rdfs:subClassOf :competencyAttribute .
 
 
+###  http://www.beamery.com#behaviour
+:behaviour rdf:type owl:Class .
+
+
 ###  http://www.beamery.com#capability
 :capability rdf:type owl:Class .
 
@@ -314,6 +325,11 @@ xsd:duration rdf:type rdfs:Datatype .
                      rdfs:comment "Explicit subclasses are created for now and linked to equivalent classes. Remove later." .
 
 
+###  http://www.beamery.com#hardSkill
+:hardSkill rdf:type owl:Class ;
+           rdfs:subClassOf :skill .
+
+
 ###  http://www.beamery.com#knowledge
 :knowledge rdf:type owl:Class ;
            rdfs:subClassOf :competencyAttribute .
@@ -357,6 +373,11 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://www.beamery.com#skillProficiency
 :skillProficiency rdf:type owl:Class ;
                   rdfs:subClassOf :capabilityAttribute .
+
+
+###  http://www.beamery.com#softSkill
+:softSkill rdf:type owl:Class ;
+           rdfs:subClassOf :skill .
 
 
 ###  http://www.beamery.com#spatialEntity
