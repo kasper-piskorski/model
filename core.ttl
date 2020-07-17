@@ -39,6 +39,45 @@ xsd:duration rdf:type rdfs:Datatype .
                         rdfs:range :capabilityAttribute .
 
 
+###  http://www.beamery.com#hasCompetency
+:hasCompetency rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :contact ;
+               rdfs:range :competency .
+
+
+###  http://www.beamery.com#hasCompetencyAbility
+:hasCompetencyAbility rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasCompetencyAttribute ;
+                      rdfs:domain :competency ;
+                      rdfs:range :ability .
+
+
+###  http://www.beamery.com#hasCompetencyAttribute
+:hasCompetencyAttribute rdf:type owl:ObjectProperty .
+
+
+###  http://www.beamery.com#hasCompetencyExperience
+:hasCompetencyExperience rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :hasCompetencyAttribute ;
+                         rdfs:domain :competency ;
+                         rdfs:range :experience .
+
+
+###  http://www.beamery.com#hasCompetencyKnowledge
+:hasCompetencyKnowledge rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasCompetencyAttribute ;
+                        rdfs:domain :competency ;
+                        rdfs:range :knowledge .
+
+
+###  http://www.beamery.com#hasCompetencySkill
+:hasCompetencySkill rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :hasCompetencyAttribute ;
+                    rdfs:domain :competency ;
+                    rdfs:range :skill .
+
+
 ###  http://www.beamery.com#hasEducation
 :hasEducation rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
@@ -94,7 +133,7 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  http://www.beamery.com#hasExperience
 :hasExperience rdf:type owl:ObjectProperty ;
-               rdfs:subPropertyOf :hasExperienceAttribute ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
                rdfs:domain :contact ;
                rdfs:range :experience .
 
@@ -119,14 +158,14 @@ xsd:duration rdf:type rdfs:Datatype .
                    rdfs:subPropertyOf :hasExperienceAttribute ;
                    rdf:type owl:FunctionalProperty ;
                    rdfs:domain :experience ;
-                   rdfs:range :experienceRole .
+                   rdfs:range :roleTitle .
 
 
 ###  http://www.beamery.com#hasExperienceSkill
 :hasExperienceSkill rdf:type owl:ObjectProperty ;
                     rdfs:subPropertyOf :hasExperienceAttribute ;
                     rdfs:domain :experience ;
-                    rdfs:range :experienceSkill .
+                    rdfs:range :skill .
 
 
 ###  http://www.beamery.com#hasLanguage
@@ -204,6 +243,11 @@ xsd:duration rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
+###  http://www.beamery.com#ability
+:ability rdf:type owl:Class ;
+         rdfs:subClassOf :competencyAttribute .
+
+
 ###  http://www.beamery.com#capability
 :capability rdf:type owl:Class .
 
@@ -215,6 +259,14 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://www.beamery.com#city
 :city rdf:type owl:Class ;
       rdfs:subClassOf :location .
+
+
+###  http://www.beamery.com#competency
+:competency rdf:type owl:Class .
+
+
+###  http://www.beamery.com#competencyAttribute
+:competencyAttribute rdf:type owl:Class .
 
 
 ###  http://www.beamery.com#contact
@@ -250,15 +302,10 @@ xsd:duration rdf:type rdfs:Datatype .
                     rdfs:comment "Explicit subclasses are created for now and linked to equivalent classes. Remove later." .
 
 
-###  http://www.beamery.com#educationOrganisation
-:educationOrganisation rdf:type owl:Class ;
-                       owl:equivalentClass :organisation ;
-                       rdfs:subClassOf :educationAttribute .
-
-
 ###  http://www.beamery.com#experience
 :experience rdf:type owl:Class ;
-            rdfs:subClassOf :spatialEntity ,
+            rdfs:subClassOf :competencyAttribute ,
+                            :spatialEntity ,
                             :temporalEntity .
 
 
@@ -267,22 +314,9 @@ xsd:duration rdf:type rdfs:Datatype .
                      rdfs:comment "Explicit subclasses are created for now and linked to equivalent classes. Remove later." .
 
 
-###  http://www.beamery.com#experienceOrganisation
-:experienceOrganisation rdf:type owl:Class ;
-                        owl:equivalentClass :organisation ;
-                        rdfs:subClassOf :experienceAttribute .
-
-
-###  http://www.beamery.com#experienceRole
-:experienceRole rdf:type owl:Class ;
-                owl:equivalentClass :roleTitle ;
-                rdfs:subClassOf :experienceAttribute .
-
-
-###  http://www.beamery.com#experienceSkill
-:experienceSkill rdf:type owl:Class ;
-                 owl:equivalentClass :skill ;
-                 rdfs:subClassOf :experienceAttribute .
+###  http://www.beamery.com#knowledge
+:knowledge rdf:type owl:Class ;
+           rdfs:subClassOf :competencyAttribute .
 
 
 ###  http://www.beamery.com#language
@@ -302,17 +336,21 @@ xsd:duration rdf:type rdfs:Datatype .
 
 ###  http://www.beamery.com#organisation
 :organisation rdf:type owl:Class ;
-              rdfs:subClassOf :spatialEntity ;
+              rdfs:subClassOf :experienceAttribute ,
+                              :spatialEntity ;
               rdfs:comment "Link to organisation subontology." .
 
 
 ###  http://www.beamery.com#roleTitle
-:roleTitle rdf:type owl:Class .
+:roleTitle rdf:type owl:Class ;
+           rdfs:subClassOf :experienceAttribute .
 
 
 ###  http://www.beamery.com#skill
 :skill rdf:type owl:Class ;
-       rdfs:subClassOf :capabilityAttribute ;
+       rdfs:subClassOf :capabilityAttribute ,
+                       :competencyAttribute ,
+                       :experienceAttribute ;
        rdfs:comment "Link to a skills subontology" .
 
 
