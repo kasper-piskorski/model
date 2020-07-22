@@ -9,6 +9,14 @@
 <http://www.beamery.com/Core> rdf:type owl:Ontology .
 
 #################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.beamery.com/Core#code
+:code rdf:type owl:AnnotationProperty .
+
+
+#################################################################
 #    Datatypes
 #################################################################
 
@@ -128,6 +136,12 @@ xsd:duration rdf:type rdfs:Datatype .
              rdfs:range :language .
 
 
+###  http://www.beamery.com/Core#hasMaritalStatus
+:hasMaritalStatus rdf:type owl:ObjectProperty ;
+                  rdfs:domain :contact ;
+                  rdfs:range :maritalStatus .
+
+
 ###  http://www.beamery.com/Core#hasOrganisation
 :hasOrganisation rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
@@ -207,12 +221,36 @@ xsd:duration rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+###  http://www.beamery.com/Core#address
+:address rdf:type owl:DatatypeProperty ;
+         rdfs:domain :contact ;
+         rdfs:range xsd:string .
+
+
+###  http://www.beamery.com/Core#postCode
+:postCode rdf:type owl:DatatypeProperty ;
+           rdfs:domain :contact ;
+           rdfs:range xsd:string .
+
+
+###  http://www.beamery.com/Core#dateOfBirth
+:dateOfBirth rdf:type owl:DatatypeProperty ;
+             rdfs:domain :contact ;
+             rdfs:range xsd:date .
+
+
 ###  http://www.beamery.com/Core#duration
 :duration rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
           rdf:type owl:FunctionalProperty ;
           rdfs:domain :temporalEntity ;
           rdfs:range xsd:duration .
+
+
+###  http://www.beamery.com/Core#email
+:email rdf:type owl:DatatypeProperty ;
+       rdfs:domain :contact ;
+       rdfs:range xsd:string .
 
 
 ###  http://www.beamery.com/Core#endDate
@@ -230,6 +268,24 @@ xsd:duration rdf:type rdfs:Datatype .
            rdfs:range xsd:string .
 
 
+###  http://www.beamery.com/Core#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain :contact ;
+        rdfs:range xsd:string .
+
+
+###  http://www.beamery.com/Core#hasInterest
+:hasInterest rdf:type owl:DatatypeProperty ;
+             rdfs:domain :contact ;
+             rdfs:range xsd:string .
+
+
+###  http://www.beamery.com/Core#hasReference
+:hasReference rdf:type owl:DatatypeProperty ;
+              rdfs:domain :contact ;
+              rdfs:range xsd:string .
+
+
 ###  http://www.beamery.com/Core#lastName
 :lastName rdf:type owl:DatatypeProperty ;
           rdfs:subPropertyOf owl:topDataProperty ;
@@ -245,9 +301,19 @@ xsd:duration rdf:type rdfs:Datatype .
            rdfs:range xsd:date .
 
 
+###  http://www.beamery.com/Core#telephone
+:telephone rdf:type owl:DatatypeProperty ;
+           rdfs:domain :contact ;
+           rdfs:range xsd:string .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://www.beamery.com/Core#Marital_Status
+:Marital_Status rdf:type owl:Class .
+
 
 ###  http://www.beamery.com/Core#city
 :city rdf:type owl:Class ;
@@ -326,6 +392,10 @@ xsd:duration rdf:type rdfs:Datatype .
                  owl:disjointWith :selfVerified .
 
 
+###  http://www.beamery.com/Core#maritalStatus
+:maritalStatus rdf:type owl:Class .
+
+
 ###  http://www.beamery.com/Core#organisation
 :organisation rdf:type owl:Class ;
               rdfs:subClassOf :educationAttribute ,
@@ -396,6 +466,28 @@ xsd:duration rdf:type rdfs:Datatype .
 ###  http://www.beamery.com/Core#verification
 :verification rdf:type owl:Class ;
               rdfs:subClassOf :skillAttribute .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.beamery.com/Core#divorced
+:divorced rdf:type owl:NamedIndividual ,
+                   :maritalStatus ;
+          :code 3 .
+
+
+###  http://www.beamery.com/Core#married
+:married rdf:type owl:NamedIndividual ,
+                  :maritalStatus ;
+         :code 2 .
+
+
+###  http://www.beamery.com/Core#single
+:single rdf:type owl:NamedIndividual ,
+                 :maritalStatus ;
+        :code 1 .
 
 
 #################################################################
