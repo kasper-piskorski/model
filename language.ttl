@@ -1,0 +1,3555 @@
+@prefix : <http://www.beamery.com/Language#> .
+@prefix core: <http://www.beamery.com/Core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.beamery.com/Language> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.beamery.com/Language#hasListeninglevel
+:hasListeninglevel rdf:type owl:ObjectProperty ;
+                     rdfs:domain :languageProficiency ;
+                     rdfs:range :languageLevel .
+
+
+###  http://www.beamery.com/Language#hasReadinglevel
+:hasReadinglevel rdf:type owl:ObjectProperty ;
+                   rdfs:domain :languageProficiency ;
+                   rdfs:range :languageLevel .
+
+
+###  http://www.beamery.com/Language#hasSpokeninteractionlevel
+:hasSpokeninteractionlevel rdf:type owl:ObjectProperty ;
+                              rdfs:domain :languageProficiency ;
+                              rdfs:range :languageLevel .
+
+
+###  http://www.beamery.com/Language#hasSpokenproductionlevel
+:hasSpokenproductionlevel rdf:type owl:ObjectProperty ;
+                             rdfs:domain :languageProficiency ;
+                             rdfs:range :languageLevel .
+
+
+###  http://www.beamery.com/Language#hasWritinglevel
+:hasWritinglevel rdf:type owl:ObjectProperty ;
+                   rdfs:domain :languageProficiency ;
+                   rdfs:range :languageLevel .
+
+
+###  http://www.beamery.com/Language#isListeninglevellanguageproficiency
+:isListeninglevellanguageproficiency rdf:type owl:ObjectProperty ;
+                                         rdfs:domain :languageLevel ;
+                                         rdfs:range :languageProficiency .
+
+
+###  http://www.beamery.com/Language#isReadinglevellanguageproficiency
+:isReadinglevellanguageproficiency rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :languageLevel ;
+                                       rdfs:range :languageProficiency .
+
+
+###  http://www.beamery.com/Language#isSpokeninteractionlevellanguageproficiency
+:isSpokeninteractionlevellanguageproficiency rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain :languageLevel ;
+                                                  rdfs:range :languageProficiency .
+
+
+###  http://www.beamery.com/Language#isSpokenproductionlevellanguageproficiency
+:isSpokenproductionlevellanguageproficiency rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain :languageLevel ;
+                                                 rdfs:range :languageProficiency .
+
+
+###  http://www.beamery.com/Language#isWritinglevellanguageproficiency
+:isWritinglevellanguageproficiency rdf:type owl:ObjectProperty ;
+                                       rdfs:domain :languageLevel ;
+                                       rdfs:range :languageProficiency .
+
+
+###  http://www.beamery.com/Language#relatedLanguage
+:relatedLanguage rdf:type owl:ObjectProperty ;
+                  rdfs:domain :languageProficiency ;
+                  rdfs:range core:language .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.beamery.com/Language#Code
+:Code rdf:type owl:DatatypeProperty ;
+      rdfs:domain core:language ;
+      rdfs:range xsd:string .
+
+
+###  http://www.beamery.com/Language#Description
+:Description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :languageLevel ;
+             rdfs:range xsd:string .
+
+
+###  http://www.beamery.com/Language#Name
+:Name rdf:type owl:DatatypeProperty ;
+      rdfs:domain core:language ,
+                  :languageLevel ;
+      rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://mccarthy.dia.fi.upm.es/competenceOntology#Competence
+:Competence rdf:type owl:Class .
+
+
+###  http://www.beamery.com/Language#languageLevel
+:languageLevel rdf:type owl:Class .
+
+
+###  http://www.beamery.com/Language#languageProficiency
+:languageProficiency rdf:type owl:Class ;
+                      rdfs:subClassOf :Competence .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.beamery.com/Language#A1
+:A1 rdf:type owl:NamedIndividual ,
+             :languageLevel ;
+    :Description "Basic User (A1)"^^xsd:string ;
+    :Name "A1"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#A2
+:A2 rdf:type owl:NamedIndividual ,
+             :languageLevel ;
+    :Description "Basic User (A2)"^^xsd:string ;
+    :Name "A2"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Abkhazian
+:Abkhazian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "abk"^^xsd:string ;
+           :Name "Abkhazian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Achinese
+:Achinese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "ace"^^xsd:string ;
+          :Name "Achinese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Acoli
+:Acoli rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ach"^^xsd:string ;
+       :Name "Acoli"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Adangme
+:Adangme rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "ada"^^xsd:string ;
+         :Name "Adangme"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Adyghe
+:Adyghe rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "ady"^^xsd:string ;
+               :Name "Adyghe; Adygei"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Afar
+:Afar rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "aar"^^xsd:string ;
+      :Name "Afar"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Afrihili
+:Afrihili rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "afh"^^xsd:string ;
+          :Name "Afrihili"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Afrikaans
+:Afrikaans rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "afr"^^xsd:string ;
+           :Name "Afrikaans"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#afroAsiaticOther
+:afroAsiaticOther rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "afa"^^xsd:string ;
+                   :Name "Afro-Asiatic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ainu
+:Ainu rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "ain"^^xsd:string ;
+      :Name "Ainu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Akan
+:Akan rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "aka"^^xsd:string ;
+      :Name "Akan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Akkadian
+:Akkadian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "akk"^^xsd:string ;
+          :Name "Akkadian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Albanian
+:Albanian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "alb"^^xsd:string ;
+          :Name "Albanian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#SwissGerman
+:SwissGerman rdf:type owl:NamedIndividual ,
+                               core:language ;
+                      :Code "gsw"^^xsd:string ;
+                      :Name "Alemani; Swiss German"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Aleut
+:Aleut rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ale"^^xsd:string ;
+       :Name "Aleut"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#algonquianLanguages
+:algonquianLanguages rdf:type owl:NamedIndividual ,
+                               core:language ;
+                      :Code "alg"^^xsd:string ;
+                      :Name "Algonquian languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#altaicOther
+:altaicOther rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "tut"^^xsd:string ;
+              :Name "Altaic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Amharic
+:Amharic rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "amh"^^xsd:string ;
+         :Name "Amharic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Angika
+:Angika rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "anp"^^xsd:string ;
+        :Name "Angika"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#apacheLanguages
+:apacheLanguages rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "apa"^^xsd:string ;
+                  :Name "Apache languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Arabic
+:Arabic rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "ara"^^xsd:string ;
+        :Name "Arabic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Aragonese
+:Aragonese rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "arg"^^xsd:string ;
+           :Name "Aragonese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Aramaic
+:Aramaic rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "arc"^^xsd:string ;
+         :Name "Aramaic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Arapaho
+:Arapaho rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "arp"^^xsd:string ;
+         :Name "Arapaho"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Araucanian
+:Araucanian rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "arn"^^xsd:string ;
+            :Name "Araucanian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Arawak
+:Arawak rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "arw"^^xsd:string ;
+        :Name "Arawak"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Armenian
+:Armenian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "arm"^^xsd:string ;
+          :Name "Armenian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#aromanianArumanianmacedoRomanian
+:Aromanian rdf:type owl:NamedIndividual ,
+                                             core:language ;
+                                    :Code "rup"^^xsd:string ;
+                                    :Name "Aromanian; Arumanian; Macedo-Romanian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#artificialOther
+:artificialOther rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "art"^^xsd:string ;
+                  :Name "Artificial (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Assamese
+:Assamese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "asm"^^xsd:string ;
+          :Name "Assamese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#asturianBable
+:asturianBable rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "ast"^^xsd:string ;
+                :Name "Asturian; Bable"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#athapascanLanguages
+:athapascanLanguages rdf:type owl:NamedIndividual ,
+                               core:language ;
+                      :Code "ath"^^xsd:string ;
+                      :Name "Athapascan languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#australianLanguages
+:australianLanguages rdf:type owl:NamedIndividual ,
+                               core:language ;
+                      :Code "aus"^^xsd:string ;
+                      :Name "Australian languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#austronesianOther
+:austronesianOther rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "map"^^xsd:string ;
+                    :Name "Austronesian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Avaric
+:Avaric rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "ava"^^xsd:string ;
+        :Name "Avaric"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Avestan
+:Avestan rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "ave"^^xsd:string ;
+         :Name "Avestan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Awadhi
+:Awadhi rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "awa"^^xsd:string ;
+        :Name "Awadhi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Aymara
+:Aymara rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "aym"^^xsd:string ;
+        :Name "Aymara"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Azerbaijani
+:Azerbaijani rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "aze"^^xsd:string ;
+             :Name "Azerbaijani"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#B1
+:B1 rdf:type owl:NamedIndividual ,
+             :languageLevel ;
+    :Description "Independent user (B1)"^^xsd:string ;
+    :Name "B1"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#B2
+:B2 rdf:type owl:NamedIndividual ,
+             :languageLevel ;
+    :Description "Independent user (B2)"^^xsd:string ;
+    :Name "B2"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Balinese
+:Balinese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "ban"^^xsd:string ;
+          :Name "Balinese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#balticOther
+:balticOther rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "bat"^^xsd:string ;
+              :Name "Baltic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Baluchi
+:Baluchi rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bal"^^xsd:string ;
+         :Name "Baluchi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bambara
+:Bambara rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bam"^^xsd:string ;
+         :Name "Bambara"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#bamilekeLanguages
+:bamilekeLanguages rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "bai"^^xsd:string ;
+                    :Name "Bamileke languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Banda
+:Banda rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "bad"^^xsd:string ;
+       :Name "Banda"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#bantuOther
+:bantuOther rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "bnt"^^xsd:string ;
+             :Name "Bantu (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Basa
+:Basa rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "bas"^^xsd:string ;
+      :Name "Basa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bashkir
+:Bashkir rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bak"^^xsd:string ;
+         :Name "Bashkir"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Basque
+:Basque rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "baq"^^xsd:string ;
+        :Name "Basque"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#batakIndonesia
+:batakIndonesia rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "btk"^^xsd:string ;
+                 :Name "Batak (Indonesia)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Beja
+:Beja rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "bej"^^xsd:string ;
+      :Name "Beja"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Belarusian
+:Belarusian rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "bel"^^xsd:string ;
+            :Name "Belarusian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bemba
+:Bemba rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "bem"^^xsd:string ;
+       :Name "Bemba"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bengali
+:Bengali rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "ben"^^xsd:string ;
+         :Name "Bengali"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#berberOther
+:berberOther rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "ber"^^xsd:string ;
+              :Name "Berber (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bhojpuri
+:Bhojpuri rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "bho"^^xsd:string ;
+          :Name "Bhojpuri"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bihari
+:Bihari rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "bih"^^xsd:string ;
+        :Name "Bihari"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bikol
+:Bikol rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "bik"^^xsd:string ;
+       :Name "Bikol"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bini
+:Bini rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "bin"^^xsd:string ;
+      :Name "Bini"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bislama
+:Bislama rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bis"^^xsd:string ;
+         :Name "Bislama"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#blinBilin
+:blinBilin rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "byn"^^xsd:string ;
+            :Name "Blin; Bilin"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bosnian
+:Bosnian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bos"^^xsd:string ;
+         :Name "Bosnian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Braj
+:Braj rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "bra"^^xsd:string ;
+      :Name "Braj"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Breton
+:Breton rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "bre"^^xsd:string ;
+        :Name "Breton"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Buginese
+:Buginese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "bug"^^xsd:string ;
+          :Name "Buginese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Bulgarian
+:Bulgarian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "bul"^^xsd:string ;
+           :Name "Bulgarian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Buriat
+:Buriat rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "bua"^^xsd:string ;
+        :Name "Buriat"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Burmese
+:Burmese rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bur"^^xsd:string ;
+         :Name "Burmese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#C1
+:C1 rdf:type owl:NamedIndividual ,
+             :languageLevel ;
+    :Description "Proficient user (C1)"^^xsd:string ;
+    :Name "C1"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#C2
+:C2 rdf:type owl:NamedIndividual ,
+             :languageLevel ;
+    :Description "Proficient user (C2)"^^xsd:string ;
+    :Name "C2"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Caddo
+:Caddo rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "cad"^^xsd:string ;
+       :Name "Caddo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Carib
+:Carib rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "car"^^xsd:string ;
+       :Name "Carib"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#catalanValencian
+:catalanValencian rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "cat"^^xsd:string ;
+                   :Name "Catalan; Valencian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#caucasianOther
+:caucasianOther rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "cau"^^xsd:string ;
+                 :Name "Caucasian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Cebuano
+:Cebuano rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "ceb"^^xsd:string ;
+         :Name "Cebuano"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#celticOther
+:celticOther rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "cel"^^xsd:string ;
+              :Name "Celtic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#centralAmericanindianother
+:centralAmericanindianother rdf:type owl:NamedIndividual ,
+                                        core:language ;
+                               :Code "cai"^^xsd:string ;
+                               :Name "Central American Indian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chagatai
+:Chagatai rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "chg"^^xsd:string ;
+          :Name "Chagatai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#chamicLanguages
+:chamicLanguages rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "cmc"^^xsd:string ;
+                  :Name "Chamic languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chamorro
+:Chamorro rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "cha"^^xsd:string ;
+          :Name "Chamorro"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chechen
+:Chechen rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "che"^^xsd:string ;
+         :Name "Chechen"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Cherokee
+:Cherokee rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "chr"^^xsd:string ;
+          :Name "Cherokee"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Cheyenne
+:Cheyenne rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "chy"^^xsd:string ;
+          :Name "Cheyenne"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chibcha
+:Chibcha rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "chb"^^xsd:string ;
+         :Name "Chibcha"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#chichewaChewanyanja
+:chichewaChewanyanja rdf:type owl:NamedIndividual ,
+                                core:language ;
+                       :Code "nya"^^xsd:string ;
+                       :Name "Chichewa; Chewa; Nyanja"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chinese
+:Chinese rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "chi"^^xsd:string ;
+         :Name "Chinese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#chinookJargon
+:chinookJargon rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "chn"^^xsd:string ;
+                :Name "Chinook jargon"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chipewyan
+:Chipewyan rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "chp"^^xsd:string ;
+           :Name "Chipewyan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Choctaw
+:Choctaw rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "cho"^^xsd:string ;
+         :Name "Choctaw"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#churchSlavic
+:churchSlavic rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "chu"^^xsd:string ;
+               :Name "Church Slavic; Old Slavonic; Church Slavonic; Old Bulgarian; Old Church Slavonic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chuukese
+:Chuukese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "chk"^^xsd:string ;
+          :Name "Chuukese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Chuvash
+:Chuvash rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "chv"^^xsd:string ;
+         :Name "Chuvash"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#classicalNewarioldnewariclassicalnepalbhasa
+:classicalNewarioldnewariclassicalnepalbhasa rdf:type owl:NamedIndividual ,
+                                                            core:language ;
+                                                   :Code "nwc"^^xsd:string ;
+                                                   :Name "Classical Newari; Old Newari; Classical Nepal Bhasa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Coptic
+:Coptic rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "cop"^^xsd:string ;
+        :Name "Coptic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Cornish
+:Cornish rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "cor"^^xsd:string ;
+         :Name "Cornish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Corsican
+:Corsican rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "cos"^^xsd:string ;
+          :Name "Corsican"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Cree
+:Cree rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "cre"^^xsd:string ;
+      :Name "Cree"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Creek
+:Creek rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "mus"^^xsd:string ;
+       :Name "Creek"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Creoles
+:Creoles rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "crp"^^xsd:string ;
+         :Name "Creoles and pidgins (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#CreolesEnglish
+:CreolesEnglish rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "cpe"^^xsd:string ;
+                :Name "Creoles and pidgins, English based (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#CreolesFrench
+:CreolesFrench rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "cpf"^^xsd:string ;
+               :Name "Creoles and pidgins, French-based (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#CreolesPortuguese
+:CreolesPortuguese rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "cpp"^^xsd:string ;
+                   :Name "Creoles and pidgins, Portuguese-based (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#crimeanTatar
+:crimeanTatar rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "crh"^^xsd:string ;
+               :Name "Crimean Tatar; Crimean Turkish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Croatian
+:Croatian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "scr"^^xsd:string ;
+          :Name "Croatian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#cushiticOther
+:cushiticOther rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "cus"^^xsd:string ;
+                :Name "Cushitic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Czech
+:Czech rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "cze"^^xsd:string ;
+       :Name "Czech"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dakota
+:Dakota rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "dak"^^xsd:string ;
+        :Name "Dakota"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Danish
+:Danish rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "dan"^^xsd:string ;
+        :Name "Danish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dargwa
+:Dargwa rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "dar"^^xsd:string ;
+        :Name "Dargwa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dayak
+:Dayak rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "day"^^xsd:string ;
+       :Name "Dayak"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Delaware
+:Delaware rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "del"^^xsd:string ;
+          :Name "Delaware"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dinka
+:Dinka rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "din"^^xsd:string ;
+       :Name "Dinka"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#divehiDhivehimaldivian
+:divehiDhivehimaldivian rdf:type owl:NamedIndividual ,
+                                   core:language ;
+                          :Code "div"^^xsd:string ;
+                          :Name "Divehi; Dhivehi; Maldivian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dogri
+:Dogri rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "doi"^^xsd:string ;
+       :Name "Dogri"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dogrib
+:Dogrib rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "dgr"^^xsd:string ;
+        :Name "Dogrib"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#dravidianOther
+:dravidianOther rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "dra"^^xsd:string ;
+                 :Name "Dravidian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Duala
+:Duala rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "dua"^^xsd:string ;
+       :Name "Duala"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#dutchFlemish
+:dutchFlemish rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "dut"^^xsd:string ;
+               :Name "Dutch; Flemish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#dutchMiddle
+:dutchMiddle rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "dum"^^xsd:string ;
+              :Name "Dutch, Middle (ca.1050-1350)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dyula
+:Dyula rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "dyu"^^xsd:string ;
+       :Name "Dyula"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Dzongkha
+:Dzongkha rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "dzo"^^xsd:string ;
+          :Name "Dzongkha"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#easternFrisian
+:easternFrisian rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "frs"^^xsd:string ;
+                 :Name "Eastern Frisian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Efik
+:Efik rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "efi"^^xsd:string ;
+      :Name "Efik"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#egyptianAncient
+:egyptianAncient rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "egy"^^xsd:string ;
+                  :Name "Egyptian (Ancient)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ekajuk
+:Ekajuk rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "eka"^^xsd:string ;
+        :Name "Ekajuk"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Elamite
+:Elamite rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "elx"^^xsd:string ;
+         :Name "Elamite"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#English
+:English rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "eng"^^xsd:string ;
+         :Name "English"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#englishMiddle
+:englishMiddle rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "enm"^^xsd:string ;
+                :Name "English, Middle (1100-1500)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#englishOld
+:englishOld rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "ang"^^xsd:string ;
+             :Name "English, Old (ca.450-1100)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Erzya
+:Erzya rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "myv"^^xsd:string ;
+       :Name "Erzya"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Esperanto
+:Esperanto rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "epo"^^xsd:string ;
+           :Name "Esperanto"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Estonian
+:Estonian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "est"^^xsd:string ;
+          :Name "Estonian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ewe
+:Ewe rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "ewe"^^xsd:string ;
+     :Name "Ewe"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ewondo
+:Ewondo rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "ewo"^^xsd:string ;
+        :Name "Ewondo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Fang
+:Fang rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "fan"^^xsd:string ;
+      :Name "Fang"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Fanti
+:Fanti rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "fat"^^xsd:string ;
+       :Name "Fanti"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Faroese
+:Faroese rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "fao"^^xsd:string ;
+         :Name "Faroese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Fijian
+:Fijian rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "fij"^^xsd:string ;
+        :Name "Fijian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#filipinoPilipino
+:filipinoPilipino rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "fil"^^xsd:string ;
+                   :Name "Filipino; Pilipino"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Finnish
+:Finnish rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "fin"^^xsd:string ;
+         :Name "Finnish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#finnoUgrianOther
+:finnoUgrianOther rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "fiu"^^xsd:string ;
+                   :Name "Finno-Ugrian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Fon
+:Fon rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "fon"^^xsd:string ;
+     :Name "Fon"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#French
+:French rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "fre"^^xsd:string ;
+        :Name "French"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#frenchMiddle
+:frenchMiddle rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "frm"^^xsd:string ;
+               :Name "French, Middle (ca.1400-1600)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#frenchOld
+:frenchOld rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "fro"^^xsd:string ;
+            :Name "French, Old (842-ca.1400)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Friulian
+:Friulian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "fur"^^xsd:string ;
+          :Name "Friulian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Fulah
+:Fulah rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ful"^^xsd:string ;
+       :Name "Fulah"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ga
+:Ga rdf:type owl:NamedIndividual ,
+             core:language ;
+    :Code "gaa"^^xsd:string ;
+    :Name "Ga"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#gaelicScottishgaelic
+:gaelicScottishgaelic rdf:type owl:NamedIndividual ,
+                                 core:language ;
+                        :Code "gla"^^xsd:string ;
+                        :Name "Gaelic; Scottish Gaelic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Galician
+:Galician rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "glg"^^xsd:string ;
+          :Name "Galician"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ganda
+:Ganda rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "lug"^^xsd:string ;
+       :Name "Ganda"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gayo
+:Gayo rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "gay"^^xsd:string ;
+      :Name "Gayo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gbaya
+:Gbaya rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "gba"^^xsd:string ;
+       :Name "Gbaya"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Geez
+:Geez rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "gez"^^xsd:string ;
+      :Name "Geez"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Georgian
+:Georgian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "geo"^^xsd:string ;
+          :Name "Georgian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#German
+:German rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "ger"^^xsd:string ;
+        :Name "German"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#germanMiddlehigh
+:germanMiddlehigh rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "gmh"^^xsd:string ;
+                    :Name "German, Middle High (ca.1050-1500)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#germanOldhigh
+:germanOldhigh rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "goh"^^xsd:string ;
+                 :Name "German, Old High (ca.750-1050)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#germanicOther
+:germanicOther rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "gem"^^xsd:string ;
+                :Name "Germanic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gilbertese
+:Gilbertese rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "gil"^^xsd:string ;
+            :Name "Gilbertese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gondi
+:Gondi rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "gon"^^xsd:string ;
+       :Name "Gondi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gorontalo
+:Gorontalo rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "gor"^^xsd:string ;
+           :Name "Gorontalo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gothic
+:Gothic rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "got"^^xsd:string ;
+        :Name "Gothic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Grebo
+:Grebo rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "grb"^^xsd:string ;
+       :Name "Grebo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#greekAncient
+:greekAncient rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "grc"^^xsd:string ;
+               :Name "Greek, Ancient (to 1453)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#greekModern
+:greekModern rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "gre"^^xsd:string ;
+              :Name "Greek, Modern (1453-)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Guarani
+:Guarani rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "grn"^^xsd:string ;
+         :Name "Guarani"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gujarati
+:Gujarati rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "guj"^^xsd:string ;
+          :Name "Gujarati"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Gwichin
+:Gwichin rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "gwi"^^xsd:string ;
+         :Name "Gwich	in"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Haida
+:Haida rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "hai"^^xsd:string ;
+       :Name "Haida"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#haitianHaitiancreole
+:haitianHaitiancreole rdf:type owl:NamedIndividual ,
+                                 core:language ;
+                        :Code "hat"^^xsd:string ;
+                        :Name "Haitian; Haitian Creole"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hausa
+:Hausa rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "hau"^^xsd:string ;
+       :Name "Hausa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hawaiian
+:Hawaiian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "haw"^^xsd:string ;
+          :Name "Hawaiian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hebrew
+:Hebrew rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "heb"^^xsd:string ;
+        :Name "Hebrew"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Herero
+:Herero rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "her"^^xsd:string ;
+        :Name "Herero"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hiligaynon
+:Hiligaynon rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "hil"^^xsd:string ;
+            :Name "Hiligaynon"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Himachali
+:Himachali rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "him"^^xsd:string ;
+           :Name "Himachali"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hindi
+:Hindi rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "hin"^^xsd:string ;
+       :Name "Hindi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#hiriMotu
+:hiriMotu rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "hmo"^^xsd:string ;
+           :Name "Hiri Motu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hittite
+:Hittite rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "hit"^^xsd:string ;
+         :Name "Hittite"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hmong
+:Hmong rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "hmn"^^xsd:string ;
+       :Name "Hmong"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hungarian
+:Hungarian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "hun"^^xsd:string ;
+           :Name "Hungarian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Hupa
+:Hupa rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "hup"^^xsd:string ;
+      :Name "Hupa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Iban
+:Iban rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "iba"^^xsd:string ;
+      :Name "Iban"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Icelandic
+:Icelandic rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "ice"^^xsd:string ;
+           :Name "Icelandic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ido
+:Ido rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "ido"^^xsd:string ;
+     :Name "Ido"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Igbo
+:Igbo rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "ibo"^^xsd:string ;
+      :Name "Igbo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ijo
+:Ijo rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "ijo"^^xsd:string ;
+     :Name "Ijo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Iloko
+:Iloko rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ilo"^^xsd:string ;
+       :Name "Iloko"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#inariSami
+:inariSami rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "smn"^^xsd:string ;
+            :Name "Inari Sami"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#indicOther
+:indicOther rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "inc"^^xsd:string ;
+             :Name "Indic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#indoEuropeanOther
+:indoEuropeanOther rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "ine"^^xsd:string ;
+                    :Name "Indo-European (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Indonesian
+:Indonesian rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "ind"^^xsd:string ;
+            :Name "Indonesian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ingush
+:Ingush rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "inh"^^xsd:string ;
+        :Name "Ingush"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Interlingua
+:Interlingua rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "ina"^^xsd:string ;
+             :Name "Interlingua (International Auxiliary Language Association)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Interlingue
+:Interlingue rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "ile"^^xsd:string ;
+             :Name "Interlingue"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Inuktitut
+:Inuktitut rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "iku"^^xsd:string ;
+           :Name "Inuktitut"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Inupiaq
+:Inupiaq rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "ipk"^^xsd:string ;
+         :Name "Inupiaq"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#iranianOther
+:iranianOther rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "ira"^^xsd:string ;
+               :Name "Iranian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Irish
+:Irish rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "gle"^^xsd:string ;
+       :Name "Irish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#irishMiddle
+:irishMiddle rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "mga"^^xsd:string ;
+              :Name "Irish, Middle (900-1200)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#irishOld
+:irishOld rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "sga"^^xsd:string ;
+           :Name "Irish, Old (to 900)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#iroquoianLanguages
+:iroquoianLanguages rdf:type owl:NamedIndividual ,
+                              core:language ;
+                     :Code "iro"^^xsd:string ;
+                     :Name "Iroquoian languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Italian
+:Italian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "ita"^^xsd:string ;
+         :Name "Italian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Japanese
+:Japanese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "jpn"^^xsd:string ;
+          :Name "Japanese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Javanese
+:Javanese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "jav"^^xsd:string ;
+          :Name "Javanese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#JudeoArabic
+:JudeoArabic rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "jrb"^^xsd:string ;
+             :Name "Judeo-Arabic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#JudeoPersian
+:JudeoPersian rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "jpr"^^xsd:string ;
+              :Name "Judeo-Persian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kabardian
+:Kabardian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "kbd"^^xsd:string ;
+           :Name "Kabardian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kabyle
+:Kabyle rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kab"^^xsd:string ;
+        :Name "Kabyle"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kachin
+:Kachin rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kac"^^xsd:string ;
+        :Name "Kachin"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#kalaallisutGreenlandic
+:kalaallisutGreenlandic rdf:type owl:NamedIndividual ,
+                                  core:language ;
+                         :Code "kal"^^xsd:string ;
+                         :Name "Kalaallisut; Greenlandic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#kalmykOirat
+:kalmykOirat rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "xal"^^xsd:string ;
+              :Name "Kalmyk; Oirat"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kamba
+:Kamba rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "kam"^^xsd:string ;
+       :Name "Kamba"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kannada
+:Kannada rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "kan"^^xsd:string ;
+         :Name "Kannada"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kanuri
+:Kanuri rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kau"^^xsd:string ;
+        :Name "Kanuri"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#KaraKalpak
+:KaraKalpak rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "kaa"^^xsd:string ;
+            :Name "Kara-Kalpak"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#KarachayBalkar
+:KarachayBalkar rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "krc"^^xsd:string ;
+                :Name "Karachay-Balkar"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Karelian
+:Karelian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "krl"^^xsd:string ;
+          :Name "Karelian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Karen
+:Karen rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "kar"^^xsd:string ;
+       :Name "Karen"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kashmiri
+:Kashmiri rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "kas"^^xsd:string ;
+          :Name "Kashmiri"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kashubian
+:Kashubian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "csb"^^xsd:string ;
+           :Name "Kashubian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kawi
+:Kawi rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "kaw"^^xsd:string ;
+      :Name "Kawi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kazakh
+:Kazakh rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kaz"^^xsd:string ;
+        :Name "Kazakh"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Khasi
+:Khasi rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "kha"^^xsd:string ;
+       :Name "Khasi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Khmer
+:Khmer rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "khm"^^xsd:string ;
+       :Name "Khmer"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#khoisanOther
+:khoisanOther rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "khi"^^xsd:string ;
+               :Name "Khoisan (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Khotanese
+:Khotanese rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "kho"^^xsd:string ;
+           :Name "Khotanese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#kikuyuGikuyu
+:kikuyuGikuyu rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "kik"^^xsd:string ;
+               :Name "Kikuyu; Gikuyu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kimbundu
+:Kimbundu rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "kmb"^^xsd:string ;
+          :Name "Kimbundu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kinyarwanda
+:Kinyarwanda rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "kin"^^xsd:string ;
+             :Name "Kinyarwanda"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kirghiz
+:Kirghiz rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "kir"^^xsd:string ;
+         :Name "Kirghiz"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#klingonTlhInganHol
+:klingonTlhInganHol rdf:type owl:NamedIndividual ,
+                              core:language ;
+                     :Code "tlh"^^xsd:string ;
+                     :Name "Klingon; tlhIngan-Hol"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Komi
+:Komi rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "kom"^^xsd:string ;
+      :Name "Komi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kongo
+:Kongo rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "kon"^^xsd:string ;
+       :Name "Kongo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Konkani
+:Konkani rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "kok"^^xsd:string ;
+         :Name "Konkani"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Korean
+:Korean rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kor"^^xsd:string ;
+        :Name "Korean"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kosraean
+:Kosraean rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "kos"^^xsd:string ;
+          :Name "Kosraean"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kpelle
+:Kpelle rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kpe"^^xsd:string ;
+        :Name "Kpelle"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kru
+:Kru rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "kro"^^xsd:string ;
+     :Name "Kru"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#kuanyamaKwanyama
+:kuanyamaKwanyama rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "kua"^^xsd:string ;
+                   :Name "Kuanyama; Kwanyama"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kumyk
+:Kumyk rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "kum"^^xsd:string ;
+       :Name "Kumyk"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kurdish
+:Kurdish rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "kur"^^xsd:string ;
+         :Name "Kurdish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kurukh
+:Kurukh rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "kru"^^xsd:string ;
+        :Name "Kurukh"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Kutenai
+:Kutenai rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "kut"^^xsd:string ;
+         :Name "Kutenai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ladino
+:Ladino rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "lad"^^xsd:string ;
+        :Name "Ladino"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lahnda
+:Lahnda rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "lah"^^xsd:string ;
+        :Name "Lahnda"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lamba
+:Lamba rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "lam"^^xsd:string ;
+       :Name "Lamba"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lao
+:Lao rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "lao"^^xsd:string ;
+     :Name "Lao"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Latin
+:Latin rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "lat"^^xsd:string ;
+       :Name "Latin"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Latvian
+:Latvian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "lav"^^xsd:string ;
+         :Name "Latvian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lezghian
+:Lezghian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "lez"^^xsd:string ;
+          :Name "Lezghian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#limburganLimburgerlimburgish
+:Limburgan rdf:type owl:NamedIndividual ,
+                                         core:language ;
+                                :Code "lim"^^xsd:string ;
+                                :Name "Limburgan; Limburger; Limburgish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lingala
+:Lingala rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "lin"^^xsd:string ;
+         :Name "Lingala"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lithuanian
+:Lithuanian rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "lit"^^xsd:string ;
+            :Name "Lithuanian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lojban
+:Lojban rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "jbo"^^xsd:string ;
+        :Name "Lojban"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#lowGerman
+:lowGerman rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "nds"^^xsd:string ;
+            :Name "Low German; Low Saxon; German, Low; Saxon, Low"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#lowerSorbian
+:lowerSorbian rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "dsb"^^xsd:string ;
+               :Name "Lower Sorbian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lozi
+:Lozi rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "loz"^^xsd:string ;
+      :Name "Lozi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#LubaKatanga
+:LubaKatanga rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "lub"^^xsd:string ;
+             :Name "Luba-Katanga"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#LubaLulua
+:LubaLulua rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "lua"^^xsd:string ;
+           :Name "Luba-Lulua"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Luiseno
+:Luiseno rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "lui"^^xsd:string ;
+         :Name "Luiseno"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#luleSami
+:luleSami rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "smj"^^xsd:string ;
+           :Name "Lule Sami"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Lunda
+:Lunda rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "lun"^^xsd:string ;
+       :Name "Lunda"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#luoKenyaandtanzania
+:luoKenyaandtanzania rdf:type owl:NamedIndividual ,
+                                 core:language ;
+                        :Code "luo"^^xsd:string ;
+                        :Name "Luo (Kenya and Tanzania)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#luxembourgishLetzeburgesch
+:luxembourgishLetzeburgesch rdf:type owl:NamedIndividual ,
+                                      core:language ;
+                             :Code "ltz"^^xsd:string ;
+                             :Name "Luxembourgish; Letzeburgesch"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Macedonian
+:Macedonian rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "mac"^^xsd:string ;
+            :Name "Macedonian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Madurese
+:Madurese rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "mad"^^xsd:string ;
+          :Name "Madurese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Magahi
+:Magahi rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "mag"^^xsd:string ;
+        :Name "Magahi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Maithili
+:Maithili rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "mai"^^xsd:string ;
+          :Name "Maithili"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Makasar
+:Makasar rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "mak"^^xsd:string ;
+         :Name "Makasar"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Malagasy
+:Malagasy rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "mlg"^^xsd:string ;
+          :Name "Malagasy"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Malay
+:Malay rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "may"^^xsd:string ;
+       :Name "Malay"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Malayalam
+:Malayalam rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "mal"^^xsd:string ;
+           :Name "Malayalam"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Maltese
+:Maltese rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "mlt"^^xsd:string ;
+         :Name "Maltese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Manchu
+:Manchu rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "mnc"^^xsd:string ;
+        :Name "Manchu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mandar
+:Mandar rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "mdr"^^xsd:string ;
+        :Name "Mandar"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mandingo
+:Mandingo rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "man"^^xsd:string ;
+          :Name "Mandingo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Manipuri
+:Manipuri rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "mni"^^xsd:string ;
+          :Name "Manipuri"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#manoboLanguages
+:manoboLanguages rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "mno"^^xsd:string ;
+                  :Name "Manobo languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Manx
+:Manx rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "glv"^^xsd:string ;
+      :Name "Manx"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Maori
+:Maori rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "mao"^^xsd:string ;
+       :Name "Maori"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Marathi
+:Marathi rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "mar"^^xsd:string ;
+         :Name "Marathi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mari
+:Mari rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "chm"^^xsd:string ;
+      :Name "Mari"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Marshallese
+:Marshallese rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "mah"^^xsd:string ;
+             :Name "Marshallese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Marwari
+:Marwari rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "mwr"^^xsd:string ;
+         :Name "Marwari"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Masai
+:Masai rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "mas"^^xsd:string ;
+       :Name "Masai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#mayanLanguages
+:mayanLanguages rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "myn"^^xsd:string ;
+                 :Name "Mayan languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mende
+:Mende rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "men"^^xsd:string ;
+       :Name "Mende"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#mikmaqMicmac
+:mikmaqMicmac rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "mic"^^xsd:string ;
+               :Name "Mi'kmaq; Micmac"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Minangkabau
+:Minangkabau rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "min"^^xsd:string ;
+             :Name "Minangkabau"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mirandese
+:Mirandese rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "mwl"^^xsd:string ;
+           :Name "Mirandese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#miscellaneousLanguages
+:miscellaneousLanguages rdf:type owl:NamedIndividual ,
+                                  core:language ;
+                         :Code "mis"^^xsd:string ;
+                         :Name "Miscellaneous languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mohawk
+:Mohawk rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "moh"^^xsd:string ;
+        :Name "Mohawk"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Moksha
+:Moksha rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "mdf"^^xsd:string ;
+        :Name "Moksha"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Moldavian
+:Moldavian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "mol"^^xsd:string ;
+           :Name "Moldavian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#monKhmerOther
+:monKhmerOther rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "mkh"^^xsd:string ;
+                :Name "Mon-Khmer (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mongo
+:Mongo rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "lol"^^xsd:string ;
+       :Name "Mongo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mongolian
+:Mongolian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "mon"^^xsd:string ;
+           :Name "Mongolian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Mossi
+:Mossi rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "mos"^^xsd:string ;
+       :Name "Mossi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#multipleLanguages
+:multipleLanguages rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "mul"^^xsd:string ;
+                    :Name "Multiple languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#mundaLanguages
+:mundaLanguages rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "mun"^^xsd:string ;
+                 :Name "Munda languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nahuatl
+:Nahuatl rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "nah"^^xsd:string ;
+         :Name "Nahuatl"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nauru
+:Nauru rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "nau"^^xsd:string ;
+       :Name "Nauru"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#navajoNavaho
+:navajoNavaho rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "nav"^^xsd:string ;
+               :Name "Navajo; Navaho"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#ndebeleNorthnorthndebele
+:ndebeleNorthnorthndebele rdf:type owl:NamedIndividual ,
+                                      core:language ;
+                             :Code "nde"^^xsd:string ;
+                             :Name "Ndebele, North; North Ndebele"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#ndebeleSouthsouthndebele
+:ndebeleSouthsouthndebele rdf:type owl:NamedIndividual ,
+                                      core:language ;
+                             :Code "nbl"^^xsd:string ;
+                             :Name "Ndebele, South; South Ndebele"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ndonga
+:Ndonga rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "ndo"^^xsd:string ;
+        :Name "Ndonga"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Neapolitan
+:Neapolitan rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "nap"^^xsd:string ;
+            :Name "Neapolitan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#nepalBhasanewari
+:nepalBhasanewari rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "new"^^xsd:string ;
+                    :Name "Nepal Bhasa; Newari"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nepali
+:Nepali rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "nep"^^xsd:string ;
+        :Name "Nepali"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nias
+:Nias rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "nia"^^xsd:string ;
+      :Name "Nias"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#nigerKordofanianOther
+:nigerKordofanianOther rdf:type owl:NamedIndividual ,
+                                 core:language ;
+                        :Code "nic"^^xsd:string ;
+                        :Name "Niger-Kordofanian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#niloSaharanOther
+:niloSaharanOther rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "ssa"^^xsd:string ;
+                   :Name "Nilo-Saharan (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Niuean
+:Niuean rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "niu"^^xsd:string ;
+        :Name "Niuean"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nko
+:Nko rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "nqo"^^xsd:string ;
+     :Name "N'ko"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#noLinguisticcontent
+:noLinguisticcontent rdf:type owl:NamedIndividual ,
+                                core:language ;
+                       :Code "zxx"^^xsd:string ;
+                       :Name "No linguistic content"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nogai
+:Nogai rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "nog"^^xsd:string ;
+       :Name "Nogai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#norseOld
+:norseOld rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "non"^^xsd:string ;
+           :Name "Norse, Old"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#northAmericanindian
+:northAmericanindian rdf:type owl:NamedIndividual ,
+                                core:language ;
+                       :Code "nai"^^xsd:string ;
+                       :Name "North American Indian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#northernFrisian
+:northernFrisian rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "frr"^^xsd:string ;
+                  :Name "Northern Frisian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#northernSami
+:northernSami rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "sme"^^xsd:string ;
+               :Name "Northern Sami"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#northernSothopedisepedi
+:northernSothopedisepedi rdf:type owl:NamedIndividual ,
+                                     core:language ;
+                            :Code "nso"^^xsd:string ;
+                            :Name "Northern Sotho; Pedi; Sepedi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Norwegian
+:Norwegian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "nor"^^xsd:string ;
+           :Name "Norwegian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#norwegianBokml
+:norwegianBokml rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "nob"^^xsd:string ;
+                 :Name "Norwegian Bokml"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#norwegianNynorsk
+:norwegianNynorsk rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "nno"^^xsd:string ;
+                   :Name "Norwegian Nynorsk"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#nubianLanguages
+:nubianLanguages rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "nub"^^xsd:string ;
+                  :Name "Nubian languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nyamwezi
+:Nyamwezi rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "nym"^^xsd:string ;
+          :Name "Nyamwezi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nyankole
+:Nyankole rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "nyn"^^xsd:string ;
+          :Name "Nyankole"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nyoro
+:Nyoro rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "nyo"^^xsd:string ;
+       :Name "Nyoro"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Nzima
+:Nzima rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "nzi"^^xsd:string ;
+       :Name "Nzima"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Occitan
+:Occitan rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "oci"^^xsd:string ;
+         :Name "Occitan (post 1500); Provenal"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ojibwa
+:Ojibwa rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "oji"^^xsd:string ;
+        :Name "Ojibwa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Oriya
+:Oriya rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ori"^^xsd:string ;
+       :Name "Oriya"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Oromo
+:Oromo rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "orm"^^xsd:string ;
+       :Name "Oromo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Osage
+:Osage rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "osa"^^xsd:string ;
+       :Name "Osage"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#ossetianOssetic
+:ossetianOssetic rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "oss"^^xsd:string ;
+                  :Name "Ossetian; Ossetic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#otomianLanguages
+:otomianLanguages rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "oto"^^xsd:string ;
+                   :Name "Otomian languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Pahlavi
+:Pahlavi rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "pal"^^xsd:string ;
+         :Name "Pahlavi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Palauan
+:Palauan rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "pau"^^xsd:string ;
+         :Name "Palauan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Pali
+:Pali rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "pli"^^xsd:string ;
+      :Name "Pali"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Pampanga
+:Pampanga rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "pam"^^xsd:string ;
+          :Name "Pampanga"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Pangasinan
+:Pangasinan rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "pag"^^xsd:string ;
+            :Name "Pangasinan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#panjabiPunjabi
+:panjabiPunjabi rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "pan"^^xsd:string ;
+                 :Name "Panjabi; Punjabi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Papiamento
+:Papiamento rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "pap"^^xsd:string ;
+            :Name "Papiamento"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#papuanLanguages
+:papuanLanguages rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "paa"^^xsd:string ;
+                  :Name "Papuan (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Persian
+:Persian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "per"^^xsd:string ;
+         :Name "Persian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#persianOld
+:persianOld rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "peo"^^xsd:string ;
+             :Name "Persian, Old (ca.600-400 B.C.)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#philippineOther
+:philippineOther rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "phi"^^xsd:string ;
+                  :Name "Philippine (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Phoenician
+:Phoenician rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "phn"^^xsd:string ;
+            :Name "Phoenician"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Pohnpeian
+:Pohnpeian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "pon"^^xsd:string ;
+           :Name "Pohnpeian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Polish
+:Polish rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "pol"^^xsd:string ;
+        :Name "Polish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Portuguese
+:Portuguese rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "por"^^xsd:string ;
+            :Name "Portuguese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#prakritLanguages
+:prakritLanguages rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "pra"^^xsd:string ;
+                   :Name "Prakrit languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#provenalOld
+:provenalOld rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "pro"^^xsd:string ;
+              :Name "Provenal, Old (to 1500)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Pushto
+:Pushto rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "pus"^^xsd:string ;
+        :Name "Pushto"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Quechua
+:Quechua rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "que"^^xsd:string ;
+         :Name "Quechua"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#RaetoRomance
+:RaetoRomance rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "roh"^^xsd:string ;
+              :Name "Raeto-Romance"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Rajasthani
+:Rajasthani rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "raj"^^xsd:string ;
+            :Name "Rajasthani"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Rapanui
+:Rapanui rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "rap"^^xsd:string ;
+         :Name "Rapanui"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Rarotongan
+:Rarotongan rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "rar"^^xsd:string ;
+            :Name "Rarotongan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#romanceOther
+:romanceOther rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "roa"^^xsd:string ;
+               :Name "Romance (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Romanian
+:Romanian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "rum"^^xsd:string ;
+          :Name "Romanian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Romany
+:Romany rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "rom"^^xsd:string ;
+        :Name "Romany"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Rundi
+:Rundi rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "run"^^xsd:string ;
+       :Name "Rundi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Russian
+:Russian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "rus"^^xsd:string ;
+         :Name "Russian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#salishanLanguages
+:salishanLanguages rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "sal"^^xsd:string ;
+                    :Name "Salishan languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#samaritanAramaic
+:samaritanAramaic rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "sam"^^xsd:string ;
+                   :Name "Samaritan Aramaic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#samiLanguagesother
+:samiLanguagesother rdf:type owl:NamedIndividual ,
+                               core:language ;
+                      :Code "smi"^^xsd:string ;
+                      :Name "Sami languages (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Samoan
+:Samoan rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "smo"^^xsd:string ;
+        :Name "Samoan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sandawe
+:Sandawe rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "sad"^^xsd:string ;
+         :Name "Sandawe"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sango
+:Sango rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "sag"^^xsd:string ;
+       :Name "Sango"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sanskrit
+:Sanskrit rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "san"^^xsd:string ;
+          :Name "Sanskrit"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Santali
+:Santali rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "sat"^^xsd:string ;
+         :Name "Santali"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sardinian
+:Sardinian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "srd"^^xsd:string ;
+           :Name "Sardinian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sasak
+:Sasak rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "sas"^^xsd:string ;
+       :Name "Sasak"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Scots
+:Scots rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "sco"^^xsd:string ;
+       :Name "Scots"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Selkup
+:Selkup rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "sel"^^xsd:string ;
+        :Name "Selkup"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#semiticOther
+:semiticOther rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "sem"^^xsd:string ;
+               :Name "Semitic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Serbian
+:Serbian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "scc"^^xsd:string ;
+         :Name "Serbian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Serer
+:Serer rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "srr"^^xsd:string ;
+       :Name "Serer"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Shan
+:Shan rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "shn"^^xsd:string ;
+      :Name "Shan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Shona
+:Shona rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "sna"^^xsd:string ;
+       :Name "Shona"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#sichuanYi
+:sichuanYi rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "iii"^^xsd:string ;
+            :Name "Sichuan Yi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sicilian
+:Sicilian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "scn"^^xsd:string ;
+          :Name "Sicilian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sidamo
+:Sidamo rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "sid"^^xsd:string ;
+        :Name "Sidamo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#signLanguages
+:signLanguages rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "sgn"^^xsd:string ;
+                :Name "Sign Languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Siksika
+:Siksika rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "bla"^^xsd:string ;
+         :Name "Siksika"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sindhi
+:Sindhi rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "snd"^^xsd:string ;
+        :Name "Sindhi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#sinhalaSinhalese
+:sinhalaSinhalese rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "sin"^^xsd:string ;
+                   :Name "Sinhala; Sinhalese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#sinoTibetanOther
+:sinoTibetanOther rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "sit"^^xsd:string ;
+                   :Name "Sino-Tibetan (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#siouanLanguages
+:siouanLanguages rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "sio"^^xsd:string ;
+                  :Name "Siouan languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#skoltSami
+:skoltSami rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "sms"^^xsd:string ;
+            :Name "Skolt Sami"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#slaveAthapascan
+:slaveAthapascan rdf:type owl:NamedIndividual ,
+                           core:language ;
+                  :Code "den"^^xsd:string ;
+                  :Name "Slave (Athapascan)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#slavicOther
+:slavicOther rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "sla"^^xsd:string ;
+              :Name "Slavic (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Slovak
+:Slovak rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "slo"^^xsd:string ;
+        :Name "Slovak"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Slovenian
+:Slovenian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "slv"^^xsd:string ;
+           :Name "Slovenian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sogdian
+:Sogdian rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "sog"^^xsd:string ;
+         :Name "Sogdian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Somali
+:Somali rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "som"^^xsd:string ;
+        :Name "Somali"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Songhai
+:Songhai rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "son"^^xsd:string ;
+         :Name "Songhai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Soninke
+:Soninke rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "snk"^^xsd:string ;
+         :Name "Soninke"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#sorbianLanguages
+:sorbianLanguages rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "wen"^^xsd:string ;
+                   :Name "Sorbian languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#sothoSouthern
+:sothoSouthern rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "sot"^^xsd:string ;
+                :Name "Sotho, Southern"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#southAmericanindianother
+:southAmericanindianother rdf:type owl:NamedIndividual ,
+                                      core:language ;
+                             :Code "sai"^^xsd:string ;
+                             :Name "South American Indian (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#southernAltai
+:southernAltai rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "alt"^^xsd:string ;
+                :Name "Southern Altai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#southernSami
+:southernSami rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "sma"^^xsd:string ;
+               :Name "Southern Sami"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#spanishCastilian
+:spanishCastilian rdf:type owl:NamedIndividual ,
+                            core:language ;
+                   :Code "spa"^^xsd:string ;
+                   :Name "Spanish; Castilian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#srananTogo
+:srananTogo rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "srn"^^xsd:string ;
+             :Name "Sranan Togo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sukuma
+:Sukuma rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "suk"^^xsd:string ;
+        :Name "Sukuma"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sumerian
+:Sumerian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "sux"^^xsd:string ;
+          :Name "Sumerian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Sundanese
+:Sundanese rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "sun"^^xsd:string ;
+           :Name "Sundanese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Susu
+:Susu rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "sus"^^xsd:string ;
+      :Name "Susu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Swahili
+:Swahili rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "swa"^^xsd:string ;
+         :Name "Swahili"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Swati
+:Swati rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ssw"^^xsd:string ;
+       :Name "Swati"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Swedish
+:Swedish rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "swe"^^xsd:string ;
+         :Name "Swedish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Syriac
+:Syriac rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "syr"^^xsd:string ;
+        :Name "Syriac"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tagalog
+:Tagalog rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tgl"^^xsd:string ;
+         :Name "Tagalog"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tahitian
+:Tahitian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "tah"^^xsd:string ;
+          :Name "Tahitian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#taiOther
+:taiOther rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "tai"^^xsd:string ;
+           :Name "Tai (Other)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tajik
+:Tajik rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "tgk"^^xsd:string ;
+       :Name "Tajik"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tamashek
+:Tamashek rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "tmh"^^xsd:string ;
+          :Name "Tamashek"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tamil
+:Tamil rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "tam"^^xsd:string ;
+       :Name "Tamil"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tatar
+:Tatar rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "tat"^^xsd:string ;
+       :Name "Tatar"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Telugu
+:Telugu rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "tel"^^xsd:string ;
+        :Name "Telugu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tereno
+:Tereno rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "ter"^^xsd:string ;
+        :Name "Tereno"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tetum
+:Tetum rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "tet"^^xsd:string ;
+       :Name "Tetum"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Thai
+:Thai rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "tha"^^xsd:string ;
+      :Name "Thai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tibetan
+:Tibetan rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tib"^^xsd:string ;
+         :Name "Tibetan"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tigre
+:Tigre rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "tig"^^xsd:string ;
+       :Name "Tigre"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tigrinya
+:Tigrinya rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "tir"^^xsd:string ;
+          :Name "Tigrinya"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Timne
+:Timne rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "tem"^^xsd:string ;
+       :Name "Timne"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tiv
+:Tiv rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "tiv"^^xsd:string ;
+     :Name "Tiv"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tlingit
+:Tlingit rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tli"^^xsd:string ;
+         :Name "Tlingit"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#tokPisin
+:tokPisin rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "tpi"^^xsd:string ;
+           :Name "Tok Pisin"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tokelau
+:Tokelau rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tkl"^^xsd:string ;
+         :Name "Tokelau"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#tongaNyasa
+:tongaNyasa rdf:type owl:NamedIndividual ,
+                      core:language ;
+             :Code "tog"^^xsd:string ;
+             :Name "Tonga (Nyasa)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#tongaTongaislands
+:tongaTongaislands rdf:type owl:NamedIndividual ,
+                              core:language ;
+                     :Code "ton"^^xsd:string ;
+                     :Name "Tonga (Tonga Islands)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tsimshian
+:Tsimshian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "tsi"^^xsd:string ;
+           :Name "Tsimshian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tsonga
+:Tsonga rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "tso"^^xsd:string ;
+        :Name "Tsonga"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tswana
+:Tswana rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "tsn"^^xsd:string ;
+        :Name "Tswana"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tumbuka
+:Tumbuka rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tum"^^xsd:string ;
+         :Name "Tumbuka"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#tupiLanguages
+:tupiLanguages rdf:type owl:NamedIndividual ,
+                         core:language ;
+                :Code "tup"^^xsd:string ;
+                :Name "Tupi languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Turkish
+:Turkish rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tur"^^xsd:string ;
+         :Name "Turkish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#turkishOttoman
+:turkishOttoman rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "ota"^^xsd:string ;
+                 :Name "Turkish, Ottoman (1500-1928)"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Turkmen
+:Turkmen rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "tuk"^^xsd:string ;
+         :Name "Turkmen"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tuvalu
+:Tuvalu rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "tvl"^^xsd:string ;
+        :Name "Tuvalu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Tuvinian
+:Tuvinian rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "tyv"^^xsd:string ;
+          :Name "Tuvinian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Twi
+:Twi rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "twi"^^xsd:string ;
+     :Name "Twi"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Udmurt
+:Udmurt rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "udm"^^xsd:string ;
+        :Name "Udmurt"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ugaritic
+:Ugaritic rdf:type owl:NamedIndividual ,
+                   core:language ;
+          :Code "uga"^^xsd:string ;
+          :Name "Ugaritic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#uighurUyghur
+:uighurUyghur rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "uig"^^xsd:string ;
+               :Name "Uighur; Uyghur"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Ukrainian
+:Ukrainian rdf:type owl:NamedIndividual ,
+                    core:language ;
+           :Code "ukr"^^xsd:string ;
+           :Name "Ukrainian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Umbundu
+:Umbundu rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "umb"^^xsd:string ;
+         :Name "Umbundu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Undetermined
+:Undetermined rdf:type owl:NamedIndividual ,
+                       core:language ;
+              :Code "und"^^xsd:string ;
+              :Name "Undetermined"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#upperSorbian
+:upperSorbian rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "hsb"^^xsd:string ;
+               :Name "Upper Sorbian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Urdu
+:Urdu rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "urd"^^xsd:string ;
+      :Name "Urdu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Uzbek
+:Uzbek rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "uzb"^^xsd:string ;
+       :Name "Uzbek"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Vai
+:Vai rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "vai"^^xsd:string ;
+     :Name "Vai"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Venda
+:Venda rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "ven"^^xsd:string ;
+       :Name "Venda"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Vietnamese
+:Vietnamese rdf:type owl:NamedIndividual ,
+                     core:language ;
+            :Code "vie"^^xsd:string ;
+            :Name "Vietnamese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Volapk
+:Volapk rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "vol"^^xsd:string ;
+        :Name "Volap.k"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Votic
+:Votic rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "vot"^^xsd:string ;
+       :Name "Votic"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#wakashanLanguages
+:wakashanLanguages rdf:type owl:NamedIndividual ,
+                             core:language ;
+                    :Code "wak"^^xsd:string ;
+                    :Name "Wakashan languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Walamo
+:Walamo rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "wal"^^xsd:string ;
+        :Name "Walamo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Walloon
+:Walloon rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "wln"^^xsd:string ;
+         :Name "Walloon"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Waray
+:Waray rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "war"^^xsd:string ;
+       :Name "Waray"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Washo
+:Washo rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "was"^^xsd:string ;
+       :Name "Washo"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Welsh
+:Welsh rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "wel"^^xsd:string ;
+       :Name "Welsh"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#westernFrisian
+:westernFrisian rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "fry"^^xsd:string ;
+                 :Name "Western Frisian"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Wolof
+:Wolof rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "wol"^^xsd:string ;
+       :Name "Wolof"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Xhosa
+:Xhosa rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "xho"^^xsd:string ;
+       :Name "Xhosa"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Yakut
+:Yakut rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "sah"^^xsd:string ;
+       :Name "Yakut"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Yao
+:Yao rdf:type owl:NamedIndividual ,
+              core:language ;
+     :Code "yao"^^xsd:string ;
+     :Name "Yao"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Yapese
+:Yapese rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "yap"^^xsd:string ;
+        :Name "Yapese"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Yiddish
+:Yiddish rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "yid"^^xsd:string ;
+         :Name "Yiddish"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Yoruba
+:Yoruba rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "yor"^^xsd:string ;
+        :Name "Yoruba"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#yupikLanguages
+:yupikLanguages rdf:type owl:NamedIndividual ,
+                          core:language ;
+                 :Code "ypk"^^xsd:string ;
+                 :Name "Yupik languages"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Zande
+:Zande rdf:type owl:NamedIndividual ,
+                core:language ;
+       :Code "znd"^^xsd:string ;
+       :Name "Zande"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Zapotec
+:Zapotec rdf:type owl:NamedIndividual ,
+                  core:language ;
+         :Code "zap"^^xsd:string ;
+         :Name "Zapotec"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#zazaDimilidimlikirdkikirmanjkizazaki
+:zazaDimilidimlikirdkikirmanjkizazaki rdf:type owl:NamedIndividual ,
+                                                    core:language ;
+                                           :Code "zza"^^xsd:string ;
+                                           :Name "Zaza; Dimili; Dimli; Kirdki; Kirmanjki; Zazaki"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Zenaga
+:Zenaga rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "zen"^^xsd:string ;
+        :Name "Zenaga"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#zhuangChuang
+:zhuangChuang rdf:type owl:NamedIndividual ,
+                        core:language ;
+               :Code "zha"^^xsd:string ;
+               :Name "Zhuang; Chuang"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Zulu
+:Zulu rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "zul"^^xsd:string ;
+      :Name "Zulu"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#Zuni
+:Zuni rdf:type owl:NamedIndividual ,
+               core:language ;
+      :Code "zun"^^xsd:string ;
+      :Name "Zuni"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#reservedforlocaluse
+:reservedforlocaluse rdf:type owl:NamedIndividual ,
+                                  core:language ;
+                         :Code "qaa-qtz"^^xsd:string ;
+                         :Name "Reserved for local use"^^xsd:string .
+
+
+###  http://www.beamery.com/Language#lushai
+:lushai rdf:type owl:NamedIndividual ,
+                 core:language ;
+        :Code "lus"^^xsd:string ;
+        :Name "lushai"^^xsd:string .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
