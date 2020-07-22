@@ -1,0 +1,726 @@
+@prefix : <http://www.beamery.com/Education#> .
+@prefix beam: <http://www.beamery.com#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.beamery.com/Education> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.beamery.com#hasEducationField
+:hasEducationField rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf beam:hasEducationAttribute ;
+                         rdfs:domain beam:education ;
+                         rdfs:range :educationField .
+
+
+###  http://www.beamery.com#hasEducationLevel
+:hasEducationLevel rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf beam:hasEducationAttribute ;
+                         rdfs:domain beam:education ;
+                         rdfs:range :educationLevel .
+
+
+###  http://www.beamery.com#isEducationFieldOfEducation
+:isEducationFieldOfEducation rdf:type owl:ObjectProperty ;
+                                     rdfs:domain :educationField ;
+                                     rdfs:range beam:education .
+
+
+###  http://www.beamery.com#isEducationLevelOf
+:isEducationLevelOf rdf:type owl:ObjectProperty ;
+                           rdfs:domain :educationLevel ;
+                           rdfs:range beam:education .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.beamery.com#Code
+:Code rdf:type owl:DatatypeProperty ;
+          rdfs:domain :educationField ;
+          rdfs:range xsd:string .
+
+
+###  http://www.beamery.com#Level
+:Level rdf:type owl:DatatypeProperty ;
+           rdfs:domain :educationField ;
+           rdfs:range xsd:string .
+
+
+###  http://www.beamery.com#Name
+:Name rdf:type owl:DatatypeProperty ;
+          rdfs:domain :educationLevel ;
+          rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.beamery.com#accountingAndTaxation
+:accountingAndTaxation rdf:type owl:Class ;
+                             rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#agricultureAndVeterinary
+:agricultureAndVeterinary rdf:type owl:Class ;
+                                rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#agricultureForestryAndfishery
+:agricultureForestryAndfishery rdf:type owl:Class ;
+                                      rdfs:subClassOf :agricultureAndVeterinary .
+
+
+###  http://www.beamery.com#agricultureForestryAndfisherybroadProgrammes
+:agricultureForestryAndfisherybroadProgrammes rdf:type owl:Class ;
+                                                      rdfs:subClassOf :agricultureForestryAndfishery .
+
+
+###  http://www.beamery.com#architectureAndBuilding
+:architectureAndBuilding rdf:type owl:Class ;
+                               rdfs:subClassOf :engineeringManufacturingAndConstruction .
+
+
+###  http://www.beamery.com#architectureAndTownplanning
+:architectureAndTownplanning rdf:type owl:Class ;
+                                    rdfs:subClassOf :architectureAndBuilding .
+
+
+###  http://www.beamery.com#Arts
+:Arts rdf:type owl:Class ;
+          rdfs:subClassOf :humanitiesAndArts .
+
+
+###  http://www.beamery.com#artsbroadProgrammes
+:artsbroadProgrammes rdf:type owl:Class ;
+                          rdfs:subClassOf :Arts .
+
+
+###  http://www.beamery.com#audiovisualTechniquesAndMediaProduction
+:audiovisualTechniquesAndMediaProduction rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Arts .
+
+
+###  http://www.beamery.com#basicBroadGeneralProgrammes
+:basicBroadGeneralProgrammes rdf:type owl:Class ;
+                                    rdfs:subClassOf :basicBroadGeneralprogrammes ,
+                                                    :generalProgrammes .
+
+
+###  http://www.beamery.com#biologyAndBiochemistry
+:biologyAndBiochemistry rdf:type owl:Class ;
+                              rdfs:subClassOf :lifeScience .
+
+
+###  http://www.beamery.com#buildingAndCivilengineering
+:buildingAndCivilengineering rdf:type owl:Class ;
+                                    rdfs:subClassOf :architectureAndBuilding .
+
+
+###  http://www.beamery.com#businessAndLaw
+:businessAndLaw rdf:type owl:Class ;
+                      rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#businessAndAdministration
+:businessAndAdministration rdf:type owl:Class ;
+                                 rdfs:subClassOf :businessAndLaw .
+
+
+###  http://www.beamery.com#businessAndAdministrationBroadProgrammes
+:businessAndAdministrationBroadProgrammes rdf:type owl:Class ;
+                                                 rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#chemicalAndProcess
+:chemicalAndProcess rdf:type owl:Class ;
+                          rdfs:subClassOf :engineeringAndEngineeringtrades .
+
+
+###  http://www.beamery.com#Chemistry
+:Chemistry rdf:type owl:Class ;
+               rdfs:subClassOf :physicalScience .
+
+
+###  http://www.beamery.com#childCareAndYouthServices
+:childCareAndYouthServices rdf:type owl:Class ;
+                                   rdfs:subClassOf :Welfare .
+
+
+###  http://www.beamery.com#communitySanitationServices
+:communitySanitationServices rdf:type owl:Class ;
+                                   rdfs:subClassOf :environmentalProtection .
+
+
+###  http://www.beamery.com#computerScience
+:computerScience rdf:type owl:Class ;
+                      rdfs:subClassOf :Computing .
+
+
+###  http://www.beamery.com#computerUse
+:computerUse rdf:type owl:Class ;
+                  rdfs:subClassOf :Computing .
+
+
+###  http://www.beamery.com#Computing
+:Computing rdf:type owl:Class ;
+               rdfs:subClassOf :scienceMathematicsAndComputing .
+
+
+###  http://www.beamery.com#craftSkills
+:craftSkills rdf:type owl:Class ;
+                  rdfs:subClassOf :Arts .
+
+
+###  http://www.beamery.com#cropAndLivestockProduction
+:cropAndLivestockProduction rdf:type owl:Class ;
+                                   rdfs:subClassOf :agricultureForestryAndFishery .
+
+
+###  http://www.beamery.com#dentalStudies
+:dentalStudies rdf:type owl:Class ;
+                    rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#Design
+:Design rdf:type owl:Class ;
+            rdfs:subClassOf :Arts .
+
+
+###  http://www.beamery.com#domesticServices
+:domesticServices rdf:type owl:Class ;
+                       rdfs:subClassOf :personalServices .
+
+
+###  http://www.beamery.com#earthScience
+:earthScience rdf:type owl:Class ;
+                   rdfs:subClassOf :physicalScience .
+
+
+###  http://www.beamery.com#Economics
+:Economics rdf:type owl:Class ;
+               rdfs:subClassOf :socialAndBehaviouralscience .
+
+
+###  http://www.beamery.com#Education
+:Education rdf:type owl:Class ;
+               rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#educationField
+:educationField rdf:type owl:Class .
+
+
+###  http://www.beamery.com#educationLevel
+:educationLevel rdf:type owl:Class .
+
+
+###  http://www.beamery.com#educationScience
+:educationScience rdf:type owl:Class ;
+                       rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#electricityAndEnergy
+:electricityAndEnergy rdf:type owl:Class ;
+                            rdfs:subClassOf :engineeringAndEngineeringTrades .
+
+
+###  http://www.beamery.com#electronicsAndAutomation
+:electronicsAndAutomation rdf:type owl:Class ;
+                                rdfs:subClassOf :engineeringAndEngineeringTrades .
+
+
+###  http://www.beamery.com#engineeringManufacturingAndConstruction
+:engineeringManufacturingAndConstruction rdf:type owl:Class ;
+                                                rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#engineeringAndEngineeringTrades
+:engineeringAndEngineeringTrades rdf:type owl:Class ;
+                                        rdfs:subClassOf :engineeringManufacturingAndConstruction .
+
+
+###  http://www.beamery.com#engineeringAndEngineeringTradesBroadProgrammes
+:engineeringAndEngineeringTradesBroadProgrammes rdf:type owl:Class ;
+                                                        rdfs:subClassOf :engineeringAndEngineeringTrades .
+
+
+###  http://www.beamery.com#environmentalProtection
+:environmentalProtection rdf:type owl:Class ;
+                              rdfs:subClassOf :Services .
+
+
+###  http://www.beamery.com#environmentalProtectionTechnology
+:environmentalProtectionTechnology rdf:type owl:Class ;
+                                         rdfs:subClassOf :environmentalProtection .
+
+
+###  http://www.beamery.com#environmentalProtectionBroadProgrammes
+:environmentalProtectionBroadProgrammes rdf:type owl:Class ;
+                                              rdfs:subClassOf :environmentalProtection .
+
+
+###  http://www.beamery.com#environmentalScience
+:environmentalScience rdf:type owl:Class ;
+                           rdfs:subClassOf :lifeScience .
+
+
+###  http://www.beamery.com#financeBankingInsurance
+:financeBankingInsurance rdf:type owl:Class ;
+                               rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#fineArts
+:fineArts rdf:type owl:Class ;
+               rdfs:subClassOf :Arts .
+
+
+###  http://www.beamery.com#Fisheries
+:Fisheries rdf:type owl:Class ;
+               rdfs:subClassOf :agricultureForestryAndFishery .
+
+
+###  http://www.beamery.com#foodProcessing
+:foodProcessing rdf:type owl:Class ;
+                     rdfs:subClassOf :manufacturingAndProcessing .
+
+
+###  http://www.beamery.com#foreignLanguages
+:foreignLanguages rdf:type owl:Class ;
+                       rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#Forestry
+:Forestry rdf:type owl:Class ;
+              rdfs:subClassOf :agricultureForestryAndFishery .
+
+
+###  http://www.beamery.com#generalProgrammes
+:generalProgrammes rdf:type owl:Class ;
+                        rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#hairAndBeautyServices
+:hairAndBeautyServices rdf:type owl:Class ;
+                              rdfs:subClassOf :personalServices .
+
+
+###  http://www.beamery.com#Health
+:Health rdf:type owl:Class ;
+            rdfs:subClassOf :healthAndWelfare .
+
+
+###  http://www.beamery.com#healthAndWelfare
+:healthAndWelfare rdf:type owl:Class ;
+                        rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#healthBroadProgrammes
+:healthBroadProgrammes rdf:type owl:Class ;
+                            rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#historyAndArcheology
+:historyAndArcheology rdf:type owl:Class ;
+                            rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#historyPhilosophyAndRelatedSubjects
+:historyPhilosophyAndRelatedSubjects rdf:type owl:Class ;
+                                             rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#Horticulture
+:Horticulture rdf:type owl:Class ;
+                  rdfs:subClassOf :agricultureForestryAndFishery .
+
+
+###  http://www.beamery.com#hotelRestaurantAndCatering
+:hotelRestaurantAndCatering rdf:type owl:Class ;
+                                   rdfs:subClassOf :personalServices .
+
+
+###  http://www.beamery.com#Humanities
+:Humanities rdf:type owl:Class ;
+                rdfs:subClassOf :humanitiesAndArts .
+
+
+###  http://www.beamery.com#humanitiesAndArts
+:humanitiesAndArts rdf:type owl:Class ;
+                         rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#humanitiesBroadProgrammes
+:humanitiesBroadProgrammes rdf:type owl:Class ;
+                                rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#journalismAndInformation
+:journalismAndInformation rdf:type owl:Class ;
+                                rdfs:subClassOf :socialSciences .
+
+
+###  http://www.beamery.com#journalismAndReporting
+:journalismAndReporting rdf:type owl:Class ;
+                              rdfs:subClassOf :journalismAndInformation .
+
+
+###  http://www.beamery.com#Law
+:Law rdf:type owl:Class ;
+         rdfs:subClassOf :businessAndLaw ,
+                         :Law .
+
+
+###  http://www.beamery.com#level0
+:level0 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#level1
+:level1 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#level2
+:level2 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#level3
+:level3 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#level4
+:level4 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#level5
+:level5 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#level6
+:level6 rdf:type owl:Class ;
+             rdfs:subClassOf :educationLevel .
+
+
+###  http://www.beamery.com#libraryInformationArchive
+:libraryInformationArchive rdf:type owl:Class ;
+                                 rdfs:subClassOf :journalismAndInformation .
+
+
+###  http://www.beamery.com#lifeScience
+:lifeScience rdf:type owl:Class ;
+                  rdfs:subClassOf :scienceMathematicsAndComputing .
+
+
+###  http://www.beamery.com#literacyAndNumeracy
+:literacyAndNumeracy rdf:type owl:Class ;
+                           rdfs:subClassOf :generalProgrammes ,
+                                           :literacyAndNumeracy .
+
+
+###  http://www.beamery.com#managementAndAdministration
+:managementAndAdministration rdf:type owl:Class ;
+                                   rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#manufacturingAndProcessing
+:manufacturingAndProcessing rdf:type owl:Class ;
+                                  rdfs:subClassOf :engineeringManufacturingAndConstruction .
+
+
+###  http://www.beamery.com#manufacturingAndProcessingBroadprogrammes
+:manufacturingAndProcessingBroadprogrammes rdf:type owl:Class ;
+                                                  rdfs:subClassOf :manufacturingAndProcessing .
+
+
+###  http://www.beamery.com#marketingAndAdvertising
+:marketingAndAdvertising rdf:type owl:Class ;
+                               rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#materialsWoodPaperPlasticGlass
+:materialsWoodPaperPlasticGlass rdf:type owl:Class ;
+                                       rdfs:subClassOf :manufacturingAndProcessing .
+
+
+###  http://www.beamery.com#Mathematics
+:Mathematics rdf:type owl:Class ;
+                 rdfs:subClassOf :mathematicsAndStatistics .
+
+
+###  http://www.beamery.com#mathematicsAndStatistics
+:mathematicsAndStatistics rdf:type owl:Class ;
+                                rdfs:subClassOf :scienceMathematicsAndComputing .
+
+
+###  http://www.beamery.com#mechanicsAndMetalwork
+:mechanicsAndMetalwork rdf:type owl:Class ;
+                              rdfs:subClassOf :engineeringAndEngineeringtrades .
+
+
+###  http://www.beamery.com#medicalDiagnosticAndTreatmentTechnology
+:medicalDiagnosticAndTreatmentTechnology rdf:type owl:Class ;
+                                                 rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#medicalServices
+:medicalServices rdf:type owl:Class ;
+                      rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#Medicine
+:Medicine rdf:type owl:Class ;
+              rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#militaryAndDefence
+:militaryAndDefence rdf:type owl:Class ;
+                          rdfs:subClassOf :securityServices .
+
+
+###  http://www.beamery.com#miningAndExtraction
+:miningAndExtraction rdf:type owl:Class ;
+                           rdfs:subClassOf :manufacturingAndProcessing .
+
+
+###  http://www.beamery.com#motherTongue
+:motherTongue rdf:type owl:Class ;
+                   rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#motorVehiclesShipsAndAircraft
+:motorVehiclesShipsAndAircraft rdf:type owl:Class ;
+                                       rdfs:subClassOf :engineeringAndEngineeringTrades .
+
+
+###  http://www.beamery.com#musicAndPerformingArts
+:musicAndPerformingArts rdf:type owl:Class ;
+                               rdfs:subClassOf :Arts .
+
+
+###  http://www.beamery.com#naturalEnvironmentsAndWildlife
+:naturalEnvironmentsAndWildlife rdf:type owl:Class ;
+                                       rdfs:subClassOf :environmentalProtection .
+
+
+###  http://www.beamery.com#nursingAndCaring
+:nursingAndCaring rdf:type owl:Class ;
+                        rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#occupationalHealthAndSafety
+:occupationalHealthAndSafety rdf:type owl:Class ;
+                                    rdfs:subClassOf :securityServices .
+
+
+###  http://www.beamery.com#personalServices
+:personalServices rdf:type owl:Class ;
+                       rdfs:subClassOf :Services .
+
+
+###  http://www.beamery.com#personalServicesBroadProgrammes
+:personalServicesBroadProgrammes rdf:type owl:Class ;
+                                       rdfs:subClassOf :personalServices .
+
+
+###  http://www.beamery.com#personalSkillsAndDevelopment
+:personalSkillsAndDevelopment rdf:type owl:Class ;
+                                     rdfs:subClassOf :generalProgrammes ,
+                                                     :personalSkillsAndDevelopment .
+
+
+###  http://www.beamery.com#Pharmacy
+:Pharmacy rdf:type owl:Class ;
+              rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#philosophyAndEthics
+:philosophyAndEthics rdf:type owl:Class ;
+                           rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#physicalScience
+:physicalScience rdf:type owl:Class ;
+                      rdfs:subClassOf :scienceMathematicsAndComputing .
+
+
+###  http://www.beamery.com#physicalSciencebroadProgrammes
+:physicalScienceBroadProgrammes rdf:type owl:Class ;
+                                      rdfs:subClassOf :physicalScience .
+
+
+###  http://www.beamery.com#Physics
+:Physics rdf:type owl:Class ;
+             rdfs:subClassOf :physicalScience .
+
+
+###  http://www.beamery.com#politicalScienceAndcivics
+:politicalScienceAndCivics rdf:type owl:Class ;
+                                  rdfs:subClassOf :socialAndBehaviouralScience .
+
+
+###  http://www.beamery.com#protectionOfPersonsAndProperty
+:protectionOfPersonsAndProperty rdf:type owl:Class ;
+                                        rdfs:subClassOf :securityServices .
+
+
+###  http://www.beamery.com#Psychology
+:Psychology rdf:type owl:Class ;
+                rdfs:subClassOf :socialAndBehaviouralScience .
+
+
+###  http://www.beamery.com#Religion
+:Religion rdf:type owl:Class ;
+              rdfs:subClassOf :Humanities .
+
+
+###  http://www.beamery.com#scienceMathematicsAndComputing
+:scienceMathematicsAndComputing rdf:type owl:Class ;
+                                       rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#secretarialAndOfficeWork
+:secretarialAndOfficeWork rdf:type owl:Class ;
+                                 rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#securityServices
+:securityServices rdf:type owl:Class ;
+                       rdfs:subClassOf :Services .
+
+
+###  http://www.beamery.com#securityServicesBroadProgrammes
+:securityServicesBroadProgrammes rdf:type owl:Class ;
+                                       rdfs:subClassOf :securityServices .
+
+
+###  http://www.beamery.com#Services
+:Services rdf:type owl:Class ;
+              rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#socialAndBehaviouralScience
+:socialAndBehaviouralScience rdf:type owl:Class ;
+                                    rdfs:subClassOf :socialSciences .
+
+
+###  http://www.beamery.com#socialAndBehaviouralScienceBroadProgrammes
+:socialAndBehaviouralScienceBroadProgrammes rdf:type owl:Class ;
+                                                    rdfs:subClassOf :socialAndBehaviouralscience .
+
+
+###  http://www.beamery.com#socialSciences
+:socialSciences rdf:type owl:Class ;
+                     rdfs:subClassOf :educationField .
+
+
+###  http://www.beamery.com#socialWorkAndCounselling
+:socialWorkAndcounselling rdf:type owl:Class ;
+                                 rdfs:subClassOf :Welfare .
+
+
+###  http://www.beamery.com#sociologyAndCulturalStudies
+:sociologyAndCulturalStudies rdf:type owl:Class ;
+                                    rdfs:subClassOf :socialAndBehaviouralScience .
+
+
+###  http://www.beamery.com#Sports
+:Sports rdf:type owl:Class ;
+            rdfs:subClassOf :personalServices .
+
+
+###  http://www.beamery.com#Statistics
+:Statistics rdf:type owl:Class ;
+                rdfs:subClassOf :mathematicsAndStatistics .
+
+
+###  http://www.beamery.com#teacherTrainingAndEducationScience
+:teacherTrainingAndEducationScience rdf:type owl:Class ;
+                                            rdfs:subClassOf :Education .
+
+
+###  http://www.beamery.com#teacherTrainingAndEducationSciencebroadProgrammes
+:teacherTrainingAndEducationSciencebroadProgrammes rdf:type owl:Class ;
+                                                            rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#teachingAndTraining
+:teachingAndTraining rdf:type owl:Class ;
+                           rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#textilesClothesFootwearLeather
+:textilesClothesFootwearLeather rdf:type owl:Class ;
+                                       rdfs:subClassOf :manufacturingAndProcessing .
+
+
+###  http://www.beamery.com#therapyAndRehabilitation
+:therapyAndRehabilitation rdf:type owl:Class ;
+                                rdfs:subClassOf :Health .
+
+
+###  http://www.beamery.com#trainingForPreschoolTeachers
+:trainingForPreschoolTeachers rdf:type owl:Class ;
+                                     rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#trainingForTeachersAtBasicLevels
+:trainingForTeachersAtBasicLevels rdf:type owl:Class ;
+                                           rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#trainingForTeachersofVocationalSubjects
+:trainingForTeachersofVocationalSubjects rdf:type owl:Class ;
+                                                  rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#trainingForTeachersWithSubjectSpecialisation
+:trainingForTeachersWithSubjectSpecialisation rdf:type owl:Class ;
+                                                       rdfs:subClassOf :teacherTrainingAndEducationScience .
+
+
+###  http://www.beamery.com#transportServices
+:transportServices rdf:type owl:Class ;
+                        rdfs:subClassOf :Services ,
+                                        :transportServices .
+
+
+###  http://www.beamery.com#travelTourismAndLeisure
+:travelTourismAndLeisure rdf:type owl:Class ;
+                                rdfs:subClassOf :personalServices .
+
+
+###  http://www.beamery.com#Veterinary
+:Veterinary rdf:type owl:Class ;
+                rdfs:subClassOf :agricultureAndVeterinary ,
+                                :Veterinary .
+
+
+###  http://www.beamery.com#Welfare
+:Welfare rdf:type owl:Class ;
+             rdfs:subClassOf :healthAndWelfare .
+
+
+###  http://www.beamery.com#wholesaleAndRetailSales
+:wholesaleAndRetailSales rdf:type owl:Class ;
+                                rdfs:subClassOf :businessAndAdministration .
+
+
+###  http://www.beamery.com#workingLife
+:workingLife rdf:type owl:Class ;
+                  rdfs:subClassOf :businessAndAdministration .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
