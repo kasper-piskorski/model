@@ -1,5 +1,5 @@
 @prefix : <http://www.beamery.com/Education#> .
-@prefix beam: <http://www.beamery.com#> .
+@prefix core: <http://www.beamery.com/Core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -14,28 +14,28 @@
 
 ###  http://www.beamery.com#hasEducationField
 :hasEducationField rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf beam:hasEducationAttribute ;
-                         rdfs:domain beam:education ;
+                         rdfs:subPropertyOf core:hasEducationAttribute ;
+                         rdfs:domain core:education ;
                          rdfs:range :educationField .
 
 
 ###  http://www.beamery.com#hasEducationLevel
 :hasEducationLevel rdf:type owl:ObjectProperty ;
-                         rdfs:subPropertyOf beam:hasEducationAttribute ;
-                         rdfs:domain beam:education ;
+                         rdfs:subPropertyOf core:hasEducationAttribute ;
+                         rdfs:domain core:education ;
                          rdfs:range :educationLevel .
 
 
 ###  http://www.beamery.com#isEducationFieldOfEducation
 :isEducationFieldOfEducation rdf:type owl:ObjectProperty ;
                                      rdfs:domain :educationField ;
-                                     rdfs:range beam:education .
+                                     rdfs:range core:education .
 
 
 ###  http://www.beamery.com#isEducationLevelOf
 :isEducationLevelOf rdf:type owl:ObjectProperty ;
                            rdfs:domain :educationLevel ;
-                           rdfs:range beam:education .
+                           rdfs:range core:education .
 
 
 #################################################################
@@ -74,14 +74,14 @@
                                 rdfs:subClassOf :educationField .
 
 
-###  http://www.beamery.com#agricultureForestryAndfishery
-:agricultureForestryAndfishery rdf:type owl:Class ;
+###  http://www.beamery.com#agricultureForestryAndFishery
+:agricultureForestryAndFishery rdf:type owl:Class ;
                                       rdfs:subClassOf :agricultureAndVeterinary .
 
 
-###  http://www.beamery.com#agricultureForestryAndfisherybroadProgrammes
-:agricultureForestryAndfisherybroadProgrammes rdf:type owl:Class ;
-                                                      rdfs:subClassOf :agricultureForestryAndfishery .
+###  http://www.beamery.com#agricultureForestryAndFisheryBroadProgrammes
+:agricultureForestryAndFisheryBroadProgrammes rdf:type owl:Class ;
+                                                      rdfs:subClassOf :agricultureForestryAndFishery .
 
 
 ###  http://www.beamery.com#architectureAndBuilding
@@ -111,7 +111,7 @@
 
 ###  http://www.beamery.com#basicBroadGeneralProgrammes
 :basicBroadGeneralProgrammes rdf:type owl:Class ;
-                                    rdfs:subClassOf :basicBroadGeneralprogrammes ,
+                                    rdfs:subClassOf :basicBroadGeneralProgrammes ,
                                                     :generalProgrammes .
 
 
@@ -142,7 +142,7 @@
 
 ###  http://www.beamery.com#chemicalAndProcess
 :chemicalAndProcess rdf:type owl:Class ;
-                          rdfs:subClassOf :engineeringAndEngineeringtrades .
+                          rdfs:subClassOf :engineeringAndEngineeringTrades .
 
 
 ###  http://www.beamery.com#Chemistry
@@ -207,7 +207,7 @@
 
 ###  http://www.beamery.com#Economics
 :Economics rdf:type owl:Class ;
-               rdfs:subClassOf :socialAndBehaviouralscience .
+               rdfs:subClassOf :socialAndBehaviouralScience .
 
 
 ###  http://www.beamery.com#Education
@@ -467,7 +467,7 @@
 
 ###  http://www.beamery.com#mechanicsAndMetalwork
 :mechanicsAndMetalwork rdf:type owl:Class ;
-                              rdfs:subClassOf :engineeringAndEngineeringtrades .
+                              rdfs:subClassOf :engineeringAndEngineeringTrades .
 
 
 ###  http://www.beamery.com#medicalDiagnosticAndTreatmentTechnology
@@ -618,7 +618,7 @@
 
 ###  http://www.beamery.com#socialAndBehaviouralScienceBroadProgrammes
 :socialAndBehaviouralScienceBroadProgrammes rdf:type owl:Class ;
-                                                    rdfs:subClassOf :socialAndBehaviouralscience .
+                                                    rdfs:subClassOf :socialAndBehaviouralScience .
 
 
 ###  http://www.beamery.com#socialSciences
