@@ -1,6 +1,8 @@
 @prefix : <http://www.beamery.com> .
 @prefix core: <http://www.beamery.com/Core#> .
 @prefix lcc-3166-1: <https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes#> .
+@prefix lcc-lr: <https://www.omg.org/spec/LCC/Languages/LanguageRepresentation#> .
+@prefix lcc-639-1: <https://www.omg.org/spec/LCC/Languages/ISO639-1-LanguageCodes#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -15,3 +17,4 @@
 
 core:location owl:equivalentClass lcc-3166-1:Location .
 core:country owl:equivalentClass lcc-3166-1:Country .
+core:language owl:equivalentClass lcc-lr:language .
