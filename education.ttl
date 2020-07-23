@@ -111,8 +111,7 @@
 
 ###  http://www.beamery.com#basicBroadGeneralProgrammes
 :basicBroadGeneralProgrammes rdf:type owl:Class ;
-                                    rdfs:subClassOf :basicBroadGeneralProgrammes ,
-                                                    :generalProgrammes .
+                                    rdfs:subClassOf :generalProgrammes .
 
 
 ###  http://www.beamery.com#biologyAndBiochemistry
@@ -426,8 +425,7 @@
 
 ###  http://www.beamery.com#literacyAndNumeracy
 :literacyAndNumeracy rdf:type owl:Class ;
-                           rdfs:subClassOf :generalProgrammes ,
-                                           :literacyAndNumeracy .
+                           rdfs:subClassOf :generalProgrammes .
 
 
 ###  http://www.beamery.com#managementAndAdministration
@@ -537,8 +535,7 @@
 
 ###  http://www.beamery.com#personalSkillsAndDevelopment
 :personalSkillsAndDevelopment rdf:type owl:Class ;
-                                     rdfs:subClassOf :generalProgrammes ,
-                                                     :personalSkillsAndDevelopment .
+                                     rdfs:subClassOf :generalProgrammes .
 
 
 ###  http://www.beamery.com#Pharmacy
@@ -704,8 +701,7 @@
 
 ###  http://www.beamery.com#Veterinary
 :Veterinary rdf:type owl:Class ;
-                rdfs:subClassOf :agricultureAndVeterinary ,
-                                :Veterinary .
+                rdfs:subClassOf :agricultureAndVeterinary .
 
 
 ###  http://www.beamery.com#Welfare

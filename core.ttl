@@ -311,8 +311,8 @@ xsd:duration rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  http://www.beamery.com/Core#Marital_Status
-:Marital_Status rdf:type owl:Class .
+###  http://www.beamery.com/Core#maritalStatus
+:maritalStatus rdf:type owl:Class .
 
 
 ###  http://www.beamery.com/Core#city
