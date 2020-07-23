@@ -17,4 +17,4 @@
 
 core:location owl:equivalentClass lcc-3166-1:Location .
 core:country owl:equivalentClass lcc-3166-1:Country .
-core:language owl:equivalentClass lcc-lr:language .
+core:language owl:equivalentClass lcc-lr:Language .
